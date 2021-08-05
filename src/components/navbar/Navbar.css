@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #141E30;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    transition: top,left,padding.6s;
+}
+
+header.sticky{
+    padding: 1rem 6rem;
+    border-bottom: 2px solid #131118;
+}
+
+header .logo{
+    z-index: 1000;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    font-family: 'Palette Mosaic', cursive;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s;
+}
+
+header ul li{
+    margin:0 1rem;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    letter-spacing: 1px;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media only screen and (max-width:810px){
+    header{
+        padding:1.8rem 6rem;
+    }
+
+    .hide-menu{
+        left: 200%;
+        transition: left .2s cubic-bezier( 0.785, 0.135, 0.15, 0.86 );
+    }
+
+    .show-menu{
+        left: 0;
+        transition: left .4s cubic-bezier( 0.785, 0.135, 0.15, 0.86 );
+    }
+
+    header ul{
+        position:absolute;
+        top:6.3rem;
+        left: 0;
+        background-color: #141E30;
+        width: 100%;
+        flex-direction: column;
+        padding:2rem;
+        box-shadow: 1px 5px 10px 1px #0d1520;
+    }
+
+    header ul li{
+        display: flex;
+        justify-content: center;
+        margin:1rem;
+        width: 100%;
+    }
+
+    header ul li a{
+        display: block;
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+    }
+
+    .menu-icon{
+        display: inline-block;
+        color: whitesmoke;
+        font-size: 2rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    header.logo{
+        font-size: 1.5rem;
+    }
+
+    .menu-icon{
+        font-size: 1.8rem;
+    }
+
+    header{
+        padding: 1.8rem 4rem;
+    }
+}
