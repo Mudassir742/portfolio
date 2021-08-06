@@ -16,30 +16,32 @@ const Navbar = () => {
     });
   }, []);
 
-  const toggleMenu = () =>{
-      setShowMneu(!showMenu);
-  }
+  const toggleMenu = () => {
+    setShowMneu(!showMenu);
+  };
 
   return (
-    <header className={style}>
-      <div className="logo">Coder</div>
-      <ul className={showMenu ? "show-menu" : "hide-menu"}>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/">Services</a>
-        </li>
-        <li>
-          <a href="/">Projects</a>
-        </li>
-        <li>
-          <a href="/">Contact</a>
-        </li>
-      </ul>
+      <header className={style}>
+        <div className="logo">Coder</div>
+        <ul className={showMenu ? "show-menu" : "hide-menu"}>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Services</a>
+          </li>
+          <li>
+            <a href="/">Projects</a>
+          </li>
+          <li>
+            <a href="/">Contact</a>
+          </li>
+        </ul>
 
-      <div className="menu-icon" onClick={toggleMenu}>{!showMenu ? <FaHamburger /> : <GiCrossedBones />}</div>
-    </header>
+        <div className="menu-icon" onClick={toggleMenu}>
+          {!showMenu ? <FaHamburger /> : <GiCrossedBones />}
+        </div>
+      </header>
   );
 };
 

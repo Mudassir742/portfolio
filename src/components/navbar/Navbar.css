@@ -1,11 +1,5 @@
-*{
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-}
-
 header{
-    background-color: #141E30;
+    background: #a869e7;
     width: 100%;
     position: fixed;
     top:0;
@@ -17,13 +11,12 @@ header{
     transition: top,left,padding.6s;
 }
 
-header.sticky{
+ header.sticky{
     padding: 1rem 6rem;
-    border-bottom: 2px solid #131118;
+    border-bottom: 1px solid #985fd1;
 }
 
 header .logo{
-    z-index: 1000;
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -54,7 +47,7 @@ header ul li a{
     display: none;
 }
 
-@media only screen and (max-width:810px){
+ @media only screen and (max-width:810px){
     header{
         padding:1.8rem 6rem;
     }
@@ -70,14 +63,15 @@ header ul li a{
     }
 
     header ul{
-        position:absolute;
-        top:6.3rem;
+        position:fixed;
+        top:5rem;
         left: 0;
-        background-color: #141E30;
+        background-color: #a869e7;
         width: 100%;
-        flex-direction: column;
-        padding:2rem;
-        box-shadow: 1px 5px 10px 1px #0d1520;
+        flex-direction: column; 
+        padding:2.2rem;
+        z-index: 1000;
+        box-shadow: 0 1px 0 0 #9a60d3;
     }
 
     header ul li{
@@ -110,11 +104,16 @@ header ul li a{
         font-size: 1.5rem;
     }
 
+    header.sticky{
+        padding: 1rem 3rem;
+        border-bottom: 1px solid #985fd1;
+    }
+
     .menu-icon{
         font-size: 1.8rem;
     }
 
     header{
-        padding: 1.8rem 4rem;
+        padding: 1.8rem 3rem;
     }
 }

@@ -1,0 +1,67 @@
+.main-banner{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(to bottom,#a869e7,#b77ff0);
+    background-attachment: fixed;
+    padding-top:7rem;
+}
+
+.inner-banner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:2rem 6rem;
+}
+
+.inner-banner h1{
+    color: aliceblue;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.type-effect div{
+    margin: 2rem 0;
+    font-size: 2rem;
+    text-align: start;
+}
+
+.inner-banner p{
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.banner-button{
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #a869e7;
+    font-weight: bold;
+}
+
+.banner-button:hover{
+    box-shadow:1px 1px 10px 1px #115481;
+    transition: box-shadow .2s;
+}
+
+.inner-banner::after{
+    content: " ";
+    background-image: url("./wave5.svg");
+    width: 100%;
+    height: 35%;
+    background-size: cover;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+    opacity: .4;
+}
