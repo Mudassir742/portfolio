@@ -21,6 +21,7 @@
     color: aliceblue;
     text-align: center;
     letter-spacing: 1px;
+    margin-bottom: 1rem;
 }
 
 .type-effect div{
@@ -31,13 +32,13 @@
 
 .inner-banner p{
     font-weight: 300;
-    margin-top: 1rem;
+    margin: 2rem 0;
     font-size: 1.2rem;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .banner-button{
-    margin-top: 2rem;
     padding: 1rem 2rem;
     border-radius: 10px;
     border: transparent;
@@ -63,5 +64,14 @@
     right: 0;
     display: block;
     position: absolute;
-    opacity: .4;
+    opacity: .6;
+}
+
+@media only screen and (max-width:450px){
+    .inner-banner{
+        padding:2rem
+    }
+    .type-effect div{
+        font-size: 1.6rem;
+    }
 }

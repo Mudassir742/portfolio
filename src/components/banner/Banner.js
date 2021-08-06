@@ -7,14 +7,13 @@ const Banner = () => {
   return (
     <section className="main-banner">
       <div className="inner-banner">
-        <h1>I am Mudassir Waheed <br/>A</h1>
         <div className="type-effect">
           <TypeWriter
             options={{
               strings: [
-                "Mobile App Devloper",
-                "Web Designer",
-                "Mern Stack Developer",
+                "Mobile Devloper",
+                "UI/UX Designer",
+                "Mern Developer",
               ],
               autoStart: true,
               loop: true,
@@ -22,7 +21,7 @@ const Banner = () => {
             }}
           />
         </div>
-
+        <h1>Hi, I'm Mudassir. Its good to see you.</h1>
         <p>
           Expert in devloping Mobile Apps and Web Apps. If you are looking for
           developer you can contact me Here{" "}

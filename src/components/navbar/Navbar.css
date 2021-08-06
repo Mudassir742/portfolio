@@ -64,7 +64,7 @@ header ul li a{
 
     header ul{
         position:fixed;
-        top:5rem;
+        top:4rem;
         left: 0;
         background-color: #a869e7;
         width: 100%;
@@ -85,6 +85,7 @@ header ul li a{
         display: block;
         padding: .5rem 1rem;
         text-transform: uppercase;
+        font-size: 1.1rem;
     }
 
     .menu-icon{
@@ -100,20 +101,21 @@ header ul li a{
 }
 
 @media only screen and (max-width:500px){
-    header.logo{
+    header .logo{
         font-size: 1.5rem;
     }
 
     header.sticky{
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
         border-bottom: 1px solid #985fd1;
     }
 
     .menu-icon{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     header{
         padding: 1.8rem 3rem;
     }
+
 }
