@@ -9,6 +9,7 @@ header{
     justify-content: space-between;
     padding: 2rem 6rem;
     transition: top,left,padding.6s;
+    z-index: 1000;
 }
 
  header.sticky{
@@ -70,7 +71,7 @@ header ul li a{
         width: 100%;
         flex-direction: column; 
         padding:2.2rem;
-        z-index: 1000;
+        z-index: -1;
         box-shadow: 0 1px 0 0 #9a60d3;
     }
 

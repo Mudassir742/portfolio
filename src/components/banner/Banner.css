@@ -1,6 +1,5 @@
 .main-banner{
     position: relative;
-    z-index: -1;
     width: 100%;
     height: 90vh;
     background: linear-gradient(to bottom,#a869e7,#b77ff0);
@@ -38,7 +37,7 @@
     letter-spacing: 1px;
 }
 
-.banner-button{
+.banner-btn button{
     padding: 1rem 2rem;
     border-radius: 10px;
     border: transparent;
@@ -46,9 +45,10 @@
     cursor: pointer;
     color: #a869e7;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-.banner-button:hover{
+.banner-btn button:hover{
     box-shadow:1px 1px 10px 1px #115481;
     transition: box-shadow .2s;
 }
@@ -57,9 +57,8 @@
     content: " ";
     background-image: url("./wave5.svg");
     width: 100%;
-    height: 35%;
+    height: 25%;
     background-size: cover;
-    z-index: -1;
     bottom: 0;
     right: 0;
     display: block;
@@ -73,5 +72,11 @@
     }
     .type-effect div{
         font-size: 1.6rem;
+    }
+    .banner-btn button{
+        padding:1rem;
+    }
+    .inner-banner::after{
+        display: none;
     }
 }
