@@ -6,3 +6,7 @@ const PRIMARY = {
   darker: "#171C23",
   contrastText: "#fff",
 };
+
+export default palatte = {
+    primary:{...PRIMARY}
+}
