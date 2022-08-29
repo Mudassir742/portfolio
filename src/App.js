@@ -15,9 +15,9 @@ function App() {
     <ThemeProvider>
       <div className="App">
         <Navbar />
-        <Banner />
+        {/* <Banner />
         <Services />
-        <Technology />
+        <Technology /> */}
       </div>
     </ThemeProvider>
   );

@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { FaHamburger } from "react-icons/fa";
 import { GiCrossedBones } from "react-icons/gi";
-
-import "./Navbar.css";
+import {
+  LinkContainer,
+  Logo,
+  NavbarContainer,
+  StyledLink,
+} from "./Navbar.styled";
+import { useTheme } from "styled-components";
+//import "./Navbar.css";
 
 const Navbar = () => {
-  const [style, setStyle] = useState("");
-
+  const [isStickey, setIsStickey] = useState(false);
+  const theme = useTheme();
+  console.log(theme);
   const [showMenu, setShowMneu] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 0) setStyle("sticky");
-      else setStyle("");
+      if (window.scrollY > 0) setIsStickey(true);
+      else setIsStickey(false);
     });
   }, []);
 
@@ -21,27 +28,22 @@ const Navbar = () => {
   };
 
   return (
-      <header className={style}>
-        <div className="logo">Coder</div>
-        <ul className={showMenu ? "show-menu" : "hide-menu"}>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">Services</a>
-          </li>
-          <li>
-            <a href="/">Projects</a>
-          </li>
-          <li>
-            <a href="/">Contact</a>
-          </li>
-        </ul>
+    <NavbarContainer isStickey={isStickey}>
+      <Logo>Coder</Logo>
+      <LinkContainer>
+        <StyledLink href="/" active={true}>Home</StyledLink>
 
-        <div className="menu-icon" onClick={toggleMenu}>
+        <StyledLink href="/">Services</StyledLink>
+
+        <StyledLink href="/">Projects</StyledLink>
+
+        <StyledLink href="/">Contact</StyledLink>
+      </LinkContainer>
+
+      {/* <div className="menu-icon" onClick={toggleMenu}>
           {!showMenu ? <FaHamburger /> : <GiCrossedBones />}
-        </div>
-      </header>
+        </div> */}
+    </NavbarContainer>
   );
 };
 
