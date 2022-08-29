@@ -40,7 +40,7 @@ export const DeveloperName = styled.h2`
   margin: 1rem 0;
   color: ${(props) => props.theme.colors.primary.main};
   letter-spacing: 2px;
-  @media (max-width: 1030px) {
+  @media (max-width: 1130px) {
     font-size: 2.5rem;
   }
 `;
@@ -73,7 +73,6 @@ export const PhotoContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 1px solid black;
   aspect-ratio: 1/2;
 `;
 
