@@ -10,7 +10,7 @@ export const NavbarContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: ${(props) => (props.isStickey ? "1rem 5rem;" : "2rem 6rem;")}
+    padding: ${(props) => (props.isStickey ? "1.6rem 5rem;" : "2rem 6rem;")}
     transition: top,left,padding.6s;
     z-index: 1000;
 `;
@@ -30,12 +30,12 @@ export const LinkContainer = styled.div`
 export const StyledLink = styled.a`
   color: ${(props) =>
     props.active
-      ? props.theme.colors.primary.main
+      ? props.theme.colors.primary.light
       : props.theme.colors.primary.contrastText};
   text-decoration: none;
   &:hover {
     cursor: pointer;
-    color: ${(props) => props.theme.colors.primary.main};
+    color: ${(props) => props.theme.colors.primary.light};
     transition: color 0.2s ease-in-out;
   }
 `;
