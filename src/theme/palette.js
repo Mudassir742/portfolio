@@ -7,6 +7,8 @@ const PRIMARY = {
   contrastText: "#fff",
 };
 
-export default palatte = {
+const palatte = {
     primary:{...PRIMARY}
 }
+
+export default palatte

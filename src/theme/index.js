@@ -1,7 +1,7 @@
 import { ThemeProvider as ReactThemeProvider } from "styled-components";
-import palette from "./palette";
+import palette from "./palette.js";
 
-export default ThemeProvider = ({ children }) => {
+const ThemeProvider = ({ children }) => {
   const theme = {
     name: "defualt",
     colors: palette,
@@ -9,3 +9,5 @@ export default ThemeProvider = ({ children }) => {
 
   return <ReactThemeProvider theme={theme}>{children}</ReactThemeProvider>;
 };
+
+export default ThemeProvider;
