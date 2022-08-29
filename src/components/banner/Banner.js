@@ -25,7 +25,7 @@ const Banner = () => {
         <h1>Hi, I'm Mudassir. Its good to see you.</h1>
         <p>
           Expert in developing Mobile Apps and Web Apps. If you are looking for
-          developer you can contact me Here{" "}
+          developer you can contact me Here
         </p>
 
         <div className="banner-btn">
