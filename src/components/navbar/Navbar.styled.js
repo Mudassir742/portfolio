@@ -30,8 +30,11 @@ export const NavigationWrapper = styled.nav`
     width: 63vw;
     height: 100vh;
     position: fixed;
+    transition: transform .7s ease-in;
+    transform:${({showMenu})=>showMenu ? "translateX(0%)" : "translateX(-110%)" } ;
     left: 0;
     top: 0;
+    z-index:100;
     background: ${(props) => props.theme.colors.primary.darker};
   }
 `;
@@ -83,8 +86,8 @@ export const StyledLink = styled.a`
 `;
 
 export const NavIcon = styled.div`
-display:none;
-@media (max-width: 768px) {
-  display:inline-block
-}
-`
+  display: none;
+  @media (max-width: 768px) {
+    display: inline-block;
+  }
+`;

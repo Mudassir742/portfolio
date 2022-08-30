@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <NavbarContainer isStickey={isStickey}>
       <Logo>Coder</Logo>
-      <NavigationWrapper>
+      <NavigationWrapper showMenu={showMenu}>
         <LinkContainer>
           <StyledLink href="/" active={true}>
             Home
