@@ -5,6 +5,7 @@ import {
   LinkContainer,
   Logo,
   NavbarContainer,
+  NavigationWrapper,
   StyledLink,
 } from "./Navbar.styled";
 import { useTheme } from "styled-components";
@@ -30,17 +31,19 @@ const Navbar = () => {
   return (
     <NavbarContainer isStickey={isStickey}>
       <Logo>Coder</Logo>
-      <LinkContainer>
-        <StyledLink href="/" active={true}>
-          Home
-        </StyledLink>
+      <NavigationWrapper>
+        <LinkContainer>
+          <StyledLink href="/" active={true}>
+            Home
+          </StyledLink>
 
-        <StyledLink href="/">Services</StyledLink>
+          <StyledLink href="/">Services</StyledLink>
 
-        <StyledLink href="/">Projects</StyledLink>
+          <StyledLink href="/">Projects</StyledLink>
 
-        <StyledLink href="/">Contact</StyledLink>
-      </LinkContainer>
+          <StyledLink href="/">Contact</StyledLink>
+        </LinkContainer>
+      </NavigationWrapper>
 
       {/* <div className="menu-icon" onClick={toggleMenu}>
           {!showMenu ? <FaHamburger /> : <GiCrossedBones />}

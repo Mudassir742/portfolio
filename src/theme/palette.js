@@ -7,8 +7,13 @@ const PRIMARY = {
   contrastText: "#fff",
 };
 
-const palatte = {
-    primary:{...PRIMARY}
-}
+const BACKGORUND = {
+  bg1: "#0e1115",
+};
 
-export default palatte
+const palatte = {
+  primary: { ...PRIMARY },
+  background: { ...BACKGORUND },
+};
+
+export default palatte;

@@ -78,6 +78,9 @@ export const Technology = styled.h5`
   font-size: 2rem;
   color: white;
   letter-spacing: 2px;
+  @media (max-width: 1030px) {
+    font-size: 1.5rem;
+  }
   @media (max-width: 530px) {
     font-size: 1.2rem;
   }

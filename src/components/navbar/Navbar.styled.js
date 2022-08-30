@@ -13,6 +13,9 @@ export const NavbarContainer = styled.header`
     padding: ${(props) => (props.isStickey ? "1.6rem 5rem;" : "2rem 6rem;")}
     transition: top,left,padding.6s;
     z-index: 1000;
+    @media (max-width: 786px) {
+     position:relative;
+    }
 `;
 
 export const Logo = styled.div`
@@ -21,19 +24,37 @@ export const Logo = styled.div`
   font-size: 1.5rem;
   letter-spacing: 1px;
 `;
-
+export const NavigationWrapper = styled.nav`
+  background: ${(props) => props.theme.colors.primary.dark};
+  @media (max-width: 768px) {
+    width: 63vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: ${(props) => props.theme.colors.primary.darker};
+  }
+`;
 export const LinkContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
   position: relative;
+  @media (max-width: 768px) {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    background: ${(props) => props.theme.colors.primary.dark};
+    border-right: 22px solid ${(props) => props.theme.colors.background.bg1};
+  }
 `;
 
 export const StyledLink = styled.a`
   padding: 0.6rem 0;
-  font-size:1rem;
-  letter-spacing:1px;
-  font-weight:bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
   color: ${(props) =>
     props.active
       ? props.theme.colors.primary.light
