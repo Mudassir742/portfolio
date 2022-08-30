@@ -13,8 +13,8 @@ export const NavbarContainer = styled.header`
     padding: ${(props) => (props.isStickey ? "1.6rem 5rem;" : "2rem 6rem;")}
     transition: top,left,padding.6s;
     z-index: 1000;
-    @media (max-width: 786px) {
-     position:relative;
+    @media (max-width: 768px) {
+      padding: ${(props) => (props.isStickey ? "1.4rem 3rem;" : "1.8rem 4rem;")}
     }
 `;
 
