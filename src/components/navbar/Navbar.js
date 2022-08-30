@@ -13,9 +13,8 @@ import { useTheme } from "styled-components";
 //import "./Navbar.css";
 
 const Navbar = () => {
-  const [isStickey, setIsStickey] = useState(false);
   const theme = useTheme();
-  console.log(theme);
+  const [isStickey, setIsStickey] = useState(false);
   const [showMenu, setShowMneu] = useState(false);
 
   useEffect(() => {
