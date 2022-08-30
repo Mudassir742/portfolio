@@ -31,7 +31,7 @@ export const LinkContainer = styled.div`
 
 export const StyledLink = styled.a`
   padding: 0.6rem 0;
-  font-size:1.2rem;
+  font-size:1rem;
   letter-spacing:1px;
   font-weight:bold;
   color: ${(props) =>
