@@ -36,7 +36,7 @@ export const IntroSection = styled.div`
     width: 100%;
   }
 `;
-export const Introduction = styled.div``;
+
 export const Typo = styled.span`
   font-size: 2rem;
   color: ${(props) => props.theme.colors.primary.main};
