@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { FaHamburger } from "react-icons/fa";
+import { FiMenu } from "react-icons/fi";
 import { GiCrossedBones } from "react-icons/gi";
 import {
   LinkContainer,
   Logo,
   NavbarContainer,
+  NavIcon,
   NavigationWrapper,
   StyledLink,
 } from "./Navbar.styled";
@@ -24,10 +25,6 @@ const Navbar = () => {
     });
   }, []);
 
-  const toggleMenu = () => {
-    setShowMneu(!showMenu);
-  };
-
   return (
     <NavbarContainer isStickey={isStickey}>
       <Logo>Coder</Logo>
@@ -45,9 +42,13 @@ const Navbar = () => {
         </LinkContainer>
       </NavigationWrapper>
 
-      {/* <div className="menu-icon" onClick={toggleMenu}>
-          {!showMenu ? <FaHamburger /> : <GiCrossedBones />}
-        </div> */}
+      <NavIcon onClick={()=>setShowMneu(!showMenu)}>
+        {!showMenu ? (
+          <FiMenu size="40px" color={theme.colors.primary.light} />
+        ) : (
+          <GiCrossedBones size="40px" color={theme.colors.primary.light} />
+        )}
+      </NavIcon>
     </NavbarContainer>
   );
 };

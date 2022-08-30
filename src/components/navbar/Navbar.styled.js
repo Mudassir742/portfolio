@@ -81,3 +81,10 @@ export const StyledLink = styled.a`
     width: 100%;
   }
 `;
+
+export const NavIcon = styled.div`
+display:none;
+@media (max-width: 768px) {
+  display:inline-block
+}
+`
