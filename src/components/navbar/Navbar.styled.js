@@ -26,16 +26,33 @@ export const LinkContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+  position: relative;
 `;
+
 export const StyledLink = styled.a`
+  padding: 0.6rem 0;
   color: ${(props) =>
     props.active
       ? props.theme.colors.primary.light
       : props.theme.colors.primary.contrastText};
   text-decoration: none;
+  position: relative;
+  transition: all 0.7s ease-in-out;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: ${(props) => (props.active ? "100%" : "0%")};
+    height: 2px;
+    background: ${(props) => props.theme.colors.primary.light};
+  }
+
   &:hover {
     cursor: pointer;
     color: ${(props) => props.theme.colors.primary.light};
-    transition: color 0.2s ease-in-out;
+  }
+  &:hover:before {
+    width: 100%;
   }
 `;

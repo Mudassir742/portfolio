@@ -31,7 +31,9 @@ const Navbar = () => {
     <NavbarContainer isStickey={isStickey}>
       <Logo>Coder</Logo>
       <LinkContainer>
-        <StyledLink href="/" active={true}>Home</StyledLink>
+        <StyledLink href="/" active={true}>
+          Home
+        </StyledLink>
 
         <StyledLink href="/">Services</StyledLink>
 
