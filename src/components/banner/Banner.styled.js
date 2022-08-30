@@ -6,17 +6,35 @@ export const HeroContainer = styled.section`
   height: 100vh;
   background: ${(props) => props.theme.colors.primary.dark};
   padding: 8rem 6rem 2rem 6rem;
+  @media (max-width: 768px) {
+    padding: 6rem 4rem 2rem 4rem;
+  }
+  @media (max-width: 385px) {
+    padding: 6rem 2rem 2rem 2rem;
+  }
 `;
 
 export const ContentSection = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const IntroSection = styled.div`
   width: 60%;
+  @media (max-width: 1030px) {
+    width: 45%;
+  }
+  @media (max-width: 875px) {
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 export const Introduction = styled.div``;
 export const Typo = styled.span`
@@ -26,6 +44,9 @@ export const Typo = styled.span`
   @media (max-width: 1030px) {
     font-size: 1.5rem;
   }
+  @media (max-width: 530px) {
+    font-size: 1.2rem;
+  }
 `;
 export const Intro = styled.span`
   font-size: 2rem;
@@ -33,6 +54,9 @@ export const Intro = styled.span`
   letter-spacing: 2px;
   @media (max-width: 1030px) {
     font-size: 1.5rem;
+  }
+  @media (max-width: 530px) {
+    font-size: 1.2rem;
   }
 `;
 export const DeveloperName = styled.h2`
@@ -43,11 +67,20 @@ export const DeveloperName = styled.h2`
   @media (max-width: 1130px) {
     font-size: 2.5rem;
   }
+  @media (max-width: 1030px) {
+    font-size: 2rem;
+  }
+  @media (max-width: 530px) {
+    font-size: 1.5rem;
+  }
 `;
 export const Technology = styled.h5`
   font-size: 2rem;
   color: white;
   letter-spacing: 2px;
+  @media (max-width: 530px) {
+    font-size: 1.2rem;
+  }
 `;
 export const HeroButton = styled.button`
   font-size: 1.2rem;
@@ -69,20 +102,35 @@ export const HeroButton = styled.button`
 export const PhotoContainer = styled.div`
   height: 100%;
   width: 40%;
-  max-width: 360px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  aspect-ratio: 1/2;
+  @media (max-width: 1030px) {
+    width: 55%;
+  }
+  @media (max-width: 875px) {
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
+  @media (max-width: 600px) {
+    height: 50%;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 export const PhotoBackground = styled.div`
   background: ${(props) => props.theme.colors.primary.main};
-  max-width:360px;
-  max-height:320px;
+  max-height:340px;
+  max-width:400px;
   width:100%;
   height:100%;
   box-sizing:border-box;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  @media (max-width: 600px) {
+    max-height:300px;
+  }
 }
 `;
