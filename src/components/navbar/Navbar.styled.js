@@ -31,6 +31,9 @@ export const LinkContainer = styled.div`
 
 export const StyledLink = styled.a`
   padding: 0.6rem 0;
+  font-size:1.2rem;
+  letter-spacing:1px;
+  font-weight:bold;
   color: ${(props) =>
     props.active
       ? props.theme.colors.primary.light
@@ -46,6 +49,7 @@ export const StyledLink = styled.a`
     width: ${(props) => (props.active ? "100%" : "0%")};
     height: 2px;
     background: ${(props) => props.theme.colors.primary.light};
+    transition: all 0.7s ease-in-out;
   }
 
   &:hover {
