@@ -28,7 +28,7 @@ const Navbar = () => {
     <NavbarContainer isStickey={isStickey}>
       <Logo>Coder</Logo>
       <NavigationWrapper showMenu={showMenu}>
-        <LinkContainer>
+        <LinkContainer showMenu={showMenu}>
           <StyledLink href="/" active={true}>
             Home
           </StyledLink>
@@ -41,7 +41,7 @@ const Navbar = () => {
         </LinkContainer>
       </NavigationWrapper>
 
-      <NavIcon onClick={()=>setShowMneu(!showMenu)}>
+      <NavIcon onClick={() => setShowMneu(!showMenu)}>
         {!showMenu ? (
           <FiMenu size="40px" color={theme.colors.primary.light} />
         ) : (
