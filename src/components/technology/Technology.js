@@ -1,11 +1,19 @@
 import React from "react";
-import { TechnologySection } from "./Technology.styled";
+import {
+  SectionHeading,
+  TechCard,
+  TechContainer,
+  TechnologySection,
+} from "./Technology.styled";
 
 const Technology = () => {
-  
   return (
     <TechnologySection>
-      1
+      <SectionHeading>Technology Stack</SectionHeading>
+      <TechContainer>
+        <TechCard>tech</TechCard>
+        <TechCard>tech2</TechCard>
+      </TechContainer>
     </TechnologySection>
   );
 };
