@@ -12,16 +12,13 @@ import {
   Typo,
   HeroButton,
   PhotoBackground,
+  IntroDetail,
+  QouteCard,
 } from "./Banner.styled";
-import TypeWriter from "typewriter-effect";
 
-import "./Banner.css";
+//import "./Banner.css";
 
 const Banner = () => {
-  const getStarted = (e) => {
-    e.preventDefault();
-    console.log(`button is clicked`);
-  };
 
   return (
     <HeroContainer>
@@ -30,11 +27,16 @@ const Banner = () => {
           <Intro>Hello, </Intro>
           <Typo>I'm</Typo>
           <DeveloperName>Mudassir Waheed</DeveloperName>
-          <Technology>Full Stack Web Developer</Technology>
+          <Technology>MERN Stack Developer</Technology>
+          <IntroDetail>
+            I am a full stack web developer with 2 years of experience. I have
+            developed amaizing web apps and worked with different clients.
+          </IntroDetail>
           <HeroButton>Let's Talk</HeroButton>
         </IntroSection>
         <PhotoContainer>
           <PhotoBackground></PhotoBackground>
+          <QouteCard>"make it Simple, make it Right, make it Work."</QouteCard>
         </PhotoContainer>
       </ContentSection>
     </HeroContainer>

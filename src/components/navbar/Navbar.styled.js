@@ -30,11 +30,13 @@ export const NavigationWrapper = styled.nav`
     width: 63vw;
     height: 100vh;
     position: fixed;
-    transition: transform .7s ease-in;
-    transform:${({showMenu})=>showMenu ? "translateX(0%)" : "translateX(-110%)" } ;
+    transition: ${({ showMenu }) =>
+      showMenu ? "transform .4s ease-in" : "transform .55s ease-in"};
+    transform: ${({ showMenu }) =>
+      showMenu ? "translateX(0%)" : "translateX(-110%)"};
     left: 0;
     top: 0;
-    z-index:100;
+    z-index: 100;
     background: ${(props) => props.theme.colors.primary.darker};
   }
 `;
@@ -42,13 +44,19 @@ export const LinkContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
-  position: relative;
+  posistion: relative;
   @media (max-width: 768px) {
     height: 100%;
     flex-direction: column;
     justify-content: center;
     width: 60vw;
     background: ${(props) => props.theme.colors.primary.dark};
+    transform: ${({ showMenu }) =>
+      showMenu ? "translateX(0%)" : "translateX(-110%)"};
+    transition: ${({ showMenu }) =>
+      showMenu
+        ? "transform .4s cubic-bezier(0, 1, 0.76, 0.97)"
+        : "transform .2s cubic-bezier(0, 1, 0.76, 0.97)"};
     border-right: 22px solid ${(props) => props.theme.colors.background.bg1};
   }
 `;
