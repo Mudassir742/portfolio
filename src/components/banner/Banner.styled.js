@@ -3,24 +3,23 @@ import styled from "styled-components";
 export const HeroContainer = styled.section`
   width: 100vw;
   max-width: 100%;
-  height: 100vh;
   background: ${(props) => props.theme.colors.primary.dark};
-  padding: 8rem 6rem 2rem 6rem;
+  padding: 8rem 6rem 4rem 6rem;
   @media (max-width: 768px) {
-    padding: 6rem 4rem 2rem 4rem;
+    padding: 6rem 4rem 4rem 4rem;
   }
   @media (max-width: 385px) {
-    padding: 6rem 2rem 2rem 2rem;
+    padding: 6rem 2rem 4rem 2rem;
   }
 `;
 
 export const ContentSection = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+  justify-content: space-between;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
+    justify-content: center;
   }
 `;
 
@@ -103,9 +102,10 @@ export const HeroButton = styled.button`
 `;
 
 export const PhotoContainer = styled.div`
-  height: 100%;
-  width: 40%;
+  height: 400px;
+  width: 50%;
   display: flex;
+  padding: 2rem 0.8rem;
   justify-content: flex-end;
   align-items: center;
   @media (max-width: 1030px) {
@@ -115,25 +115,18 @@ export const PhotoContainer = styled.div`
     width: 50%;
   }
   @media (max-width: 768px) {
+    margin: 1.2rem 0;
     width: 100%;
+    height: 350px;
     justify-content: center;
-  }
-  @media (max-width: 600px) {
-    height: 50%;
-    margin-bottom: 1.5rem;
   }
 `;
 
 export const PhotoBackground = styled.div`
   background: ${(props) => props.theme.colors.primary.main};
-  max-height:340px;
-  max-width:400px;
   width:100%;
   height:100%;
   box-sizing:border-box;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  @media (max-width: 600px) {
-    max-height:300px;
-  }
 }
 `;
