@@ -19,7 +19,6 @@ import {
 //import "./Banner.css";
 
 const Banner = () => {
-
   return (
     <HeroContainer>
       <ContentSection>
@@ -36,7 +35,9 @@ const Banner = () => {
         </IntroSection>
         <PhotoContainer>
           <PhotoBackground></PhotoBackground>
-          <QouteCard>"make it Simple, make it Right, make it Work."</QouteCard>
+          <QouteCard className="qoute">
+            "make it Simple, make it Right, make it Work."
+          </QouteCard>
         </PhotoContainer>
       </ContentSection>
     </HeroContainer>
