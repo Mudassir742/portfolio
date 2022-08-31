@@ -126,7 +126,7 @@ export const HeroButton = styled.button`
 export const PhotoContainer = styled.div`
   height: 400px;
   width: 50%;
-  position:relative;
+  position: relative;
   display: flex;
   padding: 2rem 0.8rem;
   justify-content: flex-end;
@@ -155,20 +155,20 @@ export const PhotoBackground = styled.div`
 `;
 
 export const QouteCard = styled.h5`
-font-family: 'Square Peg', cursive;
-position:absolute;
-font-size:1.6rem;
-top:15px;
-right:0;
-z-index:20;
-max-width:230px;
-color:white;
-@media (max-width: 768px) {
-  font-size:1.4rem;
-}
-@media (max-width: 500px) {
-  font-size:1.2rem;
-  top:20px;
-  max-width:200px;
-}
-`
+  font-family: "Square Peg", cursive;
+  position: absolute;
+  font-size: 1.6rem;
+  top: 15px;
+  right: 0;
+  z-index: 20;
+  max-width: 230px;
+  color: white;
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 1.2rem;
+    top: 20px;
+    max-width: 200px;
+  }
+`;
