@@ -59,8 +59,8 @@ export const Intro = styled.span`
   }
 `;
 export const DeveloperName = styled.h2`
-  font-size: 4rem;
-  margin: 1rem 0;
+  font-size: 3rem;
+  margin: 1rem 0 0.7rem 0;
   color: ${(props) => props.theme.colors.primary.main};
   letter-spacing: 2px;
   @media (max-width: 1130px) {
@@ -73,15 +73,37 @@ export const DeveloperName = styled.h2`
     font-size: 1.5rem;
   }
 `;
-export const Technology = styled.h5`
-  font-size: 2rem;
+export const Technology = styled.span`
+  font-size: 1.8rem;
+  display: block;
   color: white;
   letter-spacing: 2px;
+  margin-bottom: 2rem;
   @media (max-width: 1030px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   @media (max-width: 530px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+`;
+
+export const IntroDetail = styled.span`
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  max-width: 450px;
+  width: 100%;
+  display: block;
+  color: white;
+  letter-spacing: 1px;
+  @media (max-width: 1030px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 768px) {
+    max-width: 600px;
+  }
+  @media (max-width: 500px) {
+    font-size: 0.9rem;
   }
 `;
 export const HeroButton = styled.button`

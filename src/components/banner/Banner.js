@@ -12,6 +12,7 @@ import {
   Typo,
   HeroButton,
   PhotoBackground,
+  IntroDetail,
 } from "./Banner.styled";
 import TypeWriter from "typewriter-effect";
 
@@ -30,7 +31,11 @@ const Banner = () => {
           <Intro>Hello, </Intro>
           <Typo>I'm</Typo>
           <DeveloperName>Mudassir Waheed</DeveloperName>
-          <Technology>Full Stack Web Developer</Technology>
+          <Technology>MERN Stack Developer</Technology>
+          <IntroDetail>
+            I am a full stack web developer with 2 years of experience. I have
+            developed amaizing web apps and worked with different clients.
+          </IntroDetail>
           <HeroButton>Let's Talk</HeroButton>
         </IntroSection>
         <PhotoContainer>
