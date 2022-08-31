@@ -16,8 +16,9 @@ function App() {
       <div className="App">
         <Navbar />
         <Banner />
+        <Technology />
         {/* <Services />
-        <Technology /> */}
+         */}
       </div>
     </ThemeProvider>
   );
