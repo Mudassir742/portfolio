@@ -154,13 +154,21 @@ export const PhotoBackground = styled.div`
 }
 `;
 
-// export const QouteCard = styled.div`
-// position:absolute;
-// top:10%;
-// right:0;
-// z-index:20;
-// width:230px;
-// border-radius:10px;
-// background: rgba(255, 255, 255, .5);
-// padding:1rem;
-// `
+export const QouteCard = styled.h5`
+font-family: 'Square Peg', cursive;
+position:absolute;
+font-size:1.6rem;
+top:15px;
+right:0;
+z-index:20;
+max-width:230px;
+color:white;
+@media (max-width: 768px) {
+  font-size:1.4rem;
+}
+@media (max-width: 500px) {
+  font-size:1.2rem;
+  top:20px;
+  max-width:200px;
+}
+`

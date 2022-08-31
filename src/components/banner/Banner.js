@@ -42,6 +42,8 @@ const Banner = () => {
         <PhotoContainer>
           <PhotoBackground>
           </PhotoBackground>
+          <QouteCard>"make it Simple, make it Right, make it Work."</QouteCard>
+
         </PhotoContainer>
       </ContentSection>
     </HeroContainer>
