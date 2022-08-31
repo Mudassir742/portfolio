@@ -8,7 +8,7 @@ import Technology from "./components/technology/Technology";
 //theme
 import ThemeProvider from "./theme";
 
-import "./App.css";
+//import "./App.css";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
       <div className="App">
         <Navbar />
         <Banner />
-        {/* <Services />
-        <Technology /> */}
+        <Technology />
+        {/* <Services />*/}
       </div>
     </ThemeProvider>
   );
