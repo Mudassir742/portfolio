@@ -13,6 +13,7 @@ import {
   HeroButton,
   PhotoBackground,
   IntroDetail,
+  QouteCard,
 } from "./Banner.styled";
 import TypeWriter from "typewriter-effect";
 
@@ -39,7 +40,8 @@ const Banner = () => {
           <HeroButton>Let's Talk</HeroButton>
         </IntroSection>
         <PhotoContainer>
-          <PhotoBackground></PhotoBackground>
+          <PhotoBackground>
+          </PhotoBackground>
         </PhotoContainer>
       </ContentSection>
     </HeroContainer>

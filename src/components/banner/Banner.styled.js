@@ -126,6 +126,7 @@ export const HeroButton = styled.button`
 export const PhotoContainer = styled.div`
   height: 400px;
   width: 50%;
+  position:relative;
   display: flex;
   padding: 2rem 0.8rem;
   justify-content: flex-end;
@@ -152,3 +153,14 @@ export const PhotoBackground = styled.div`
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
 `;
+
+// export const QouteCard = styled.div`
+// position:absolute;
+// top:10%;
+// right:0;
+// z-index:20;
+// width:230px;
+// border-radius:10px;
+// background: rgba(255, 255, 255, .5);
+// padding:1rem;
+// `
