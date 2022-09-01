@@ -19,11 +19,26 @@ export const NavbarContainer = styled.header`
 `;
 
 export const Logo = styled.div`
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  @media (max-width: 500px) {
+    gap: 0.8rem;
+  }
+`;
+
+export const LogoText = styled.p`
   color: white;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
+  font-family: "Nova Round", cursive;
+  @media (max-width: 500px) {
+    font-size: 1.2rem;
+  }
 `;
+
 export const NavigationWrapper = styled.nav`
   background: ${(props) => props.theme.colors.primary.dark};
   @media (max-width: 768px) {
@@ -97,5 +112,16 @@ export const NavIcon = styled.div`
   display: none;
   @media (max-width: 768px) {
     display: inline-block;
+  }
+`;
+
+export const Image = styled.img`
+  width: 50px;
+  height: auto;
+  @media (max-width: 872px) {
+    width: 40px;
+  }
+  @media (max-width: 500px) {
+    width: 30px;
   }
 `;

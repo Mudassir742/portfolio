@@ -8,8 +8,12 @@ import {
   NavIcon,
   NavigationWrapper,
   StyledLink,
+  Image,
+  LogoText,
 } from "./Navbar.styled";
 import { useTheme } from "styled-components";
+import LogoIcon from "../../asset/icons/logo.png";
+
 //import "./Navbar.css";
 
 const Navbar = () => {
@@ -26,7 +30,10 @@ const Navbar = () => {
 
   return (
     <NavbarContainer isStickey={isStickey}>
-      <Logo>Coder</Logo>
+      <Logo>
+        <Image src={LogoIcon} alt="logo" />
+        <LogoText>mudassir.</LogoText>
+      </Logo>
       <NavigationWrapper showMenu={showMenu}>
         <LinkContainer showMenu={showMenu}>
           <StyledLink href="/" active={true}>
