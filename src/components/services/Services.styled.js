@@ -5,6 +5,9 @@ export const ServiceSection = styled.section`
   padding: 2rem 5rem 5rem 5rem;
   max-width: 100%;
   background: ${({ theme }) => theme.colors.primary.darker};
+  @media (max-width: 768px) {
+    padding: 2rem 3rem;
+  }
 `;
 
 export const SectionHeading = styled.p`
@@ -27,6 +30,13 @@ export const CardSection = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
+  @media (max-width: 930px) {
+    grid-gap: 30px;
+  }
+  @media (max-width: 860px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 45px;
+  }
 `;
 
 export const ServiceCard = styled.div`
@@ -36,19 +46,43 @@ export const ServiceCard = styled.div`
   background: ${({ theme }) => theme.colors.primary.dark};
   color: white;
   padding: 1.5rem 2rem;
-  border-radius: 10px;
-  transition:transform .4s ease;
-  &:hover{
-    cursor:pointer;
-    transform:translateY(-10px);
+  border-radius: 6px;
+  border-bottom: 5px solid ${({ theme }) => theme.colors.primary.main};
+  transition: transform 0.4s ease;
+  position: relative;
+  &:hover:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    z-index: -1;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 8px 2px #000000;
+    transition: transform 0.3s ease-out;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+  }
+  @media (max-width: 860px) {
+    padding: 1.8rem 2.5rem;
+  }
+  @media (max-width: 600px) {
+    padding: 1.6rem 2.2rem;
+  }
+  @media (max-width: 390px) {
+    padding: 1.4rem 1.8rem;
   }
 `;
 
 export const Image = styled.img`
   width: 70px;
   height: auto;
-  @media (max-width: 872px) {
-    width: 40px;
+  @media (max-width: 900px) {
+    width: 50px;
+  }
+  @media (max-width: 860px) {
+    width: 75px;
   }
 `;
 
@@ -57,6 +91,9 @@ export const ServiceHeading = styled.p`
   margin: 1.5rem 0 0.5rem 0;
   font-weight: 500;
   letter-spacing: 1px;
+  @media (max-width: 860px) {
+    font-size: 1.2rem;
+  }
 `;
 export const ServiceDetail = styled.p`
   text-align: center;
