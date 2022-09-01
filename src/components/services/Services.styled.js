@@ -37,6 +37,11 @@ export const ServiceCard = styled.div`
   color: white;
   padding: 1.5rem 2rem;
   border-radius: 10px;
+  transition:transform .4s ease;
+  &:hover{
+    cursor:pointer;
+    transform:translateY(-10px);
+  }
 `;
 
 export const Image = styled.img`
