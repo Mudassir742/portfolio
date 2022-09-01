@@ -1,48 +1,53 @@
 import React from "react";
-import { AiFillAndroid } from "react-icons/ai";
-import { BiMobileAlt } from "react-icons/bi";
-import { SiAdobeillustrator } from "react-icons/si";
+import {
+  CardSection,
+  Image,
+  SectionHeading,
+  ServiceCard,
+  ServiceDetail,
+  ServiceHeading,
+  ServiceSection,
+} from "./Services.styled";
 
-import "./Services.css";
+import FrontendImage from "../../asset/icons/frontend.png";
+import BackendImage from "../../asset/icons/backend.png";
+import BugImage from "../../asset/icons/bug.png";
+
+//import "./Services.css";
 const Services = () => {
   return (
-    <div className="services" id="services">
-      <div className="services-content">
-        <div className="services-box">
-          <div className="service-icon">
-            <AiFillAndroid />
-          </div>
-          <h4>Mobile Development</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi
-          </p>
-        </div>
-        <div className="services-box">
-          <div className="service-icon">
-            <BiMobileAlt />
-          </div>
-          <h4>Responisve Design</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi
-          </p>
-        </div>
-        <div className="services-box">
-          <div className="service-icon">
-            <SiAdobeillustrator/>
-          </div>
-          <h4>Design Replica</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi
-          </p>
-        </div>
-      </div>
-      <div className="services-btn">
-            <button> Learn More</button>
-      </div>
-    </div>
+    <ServiceSection>
+      <SectionHeading>My Services</SectionHeading>
+      <CardSection>
+        <ServiceCard>
+          <Image src={FrontendImage} alt="icon" />
+          <ServiceHeading>Frontend</ServiceHeading>
+          <ServiceDetail>
+            I am very good in replicating designs.I have design many web pages
+            with amaizing design. I will convert your static figma or any type
+            of design to responsive web pages.
+          </ServiceDetail>
+        </ServiceCard>
+        <ServiceCard>
+          <Image src={BackendImage} alt="icon" />
+          <ServiceHeading>Backend</ServiceHeading>
+          <ServiceDetail>
+            I am very good in replicating designs.I have design many web pages
+            with amaizing design. I will convert your static figma or any type
+            of design to responsive web pages.
+          </ServiceDetail>
+        </ServiceCard>
+        <ServiceCard>
+          <Image src={BugImage} alt="icon" />
+          <ServiceHeading>Bug Fixing</ServiceHeading>
+          <ServiceDetail>
+            I am very good in replicating designs.I have design many web pages
+            with amaizing design. I will convert your static figma or any type
+            of design to responsive web pages.
+          </ServiceDetail>
+        </ServiceCard>
+      </CardSection>
+    </ServiceSection>
   );
 };
 
