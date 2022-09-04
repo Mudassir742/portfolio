@@ -1,5 +1,4 @@
 import React from "react";
-import { Parallax } from "react-scroll-parallax";
 import ProjectImage from "../../asset/project/project_1.png";
 import ProjectCard from "./ProjectCard";
 import {
