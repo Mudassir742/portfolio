@@ -23,19 +23,25 @@ export const SectionHeading = styled.p`
 `;
 export const ProjectContainer = styled.section`
 display:flex;
-align-items:center;
 ` 
 export const ProjectImageContainer = styled.div`
-width:65%;
+width:60%;
 background:${({theme})=>theme.colors.primary.darker};
+overflow:hidden;
 `
 export const Image = styled.img`
 width:100%;
 `
 export const ProjectInfoContainer = styled.div`
-width:35%;
-padding:2rem;
+width:40%;
+padding:4rem 2rem;
 `
-export const ProjectHeading = styled.h1`
+export const ProjectHeading = styled.p`
+font-size:2.5rem;
+color:${({theme})=>theme.colors.primary.main};
+`
 
+export const ProjectDetail = styled.p`
+font-size:2.5rem;
+color:${({theme})=>theme.colors.primary.main};
 `

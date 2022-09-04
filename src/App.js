@@ -1,5 +1,6 @@
 //react
 import React from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 //components
 import Navbar from "./components/navbar/Navbar";
 import Banner from "./components/banner/Banner";
@@ -14,6 +15,7 @@ import "./App.css";
 function App() {
   return (
     <ThemeProvider>
+      <ParallaxProvider>
       <div className="App">
         <Navbar />
         <Banner />
@@ -21,6 +23,7 @@ function App() {
         <Technology />
         <Project />
       </div>
+      </ParallaxProvider>
     </ThemeProvider>
   );
 }

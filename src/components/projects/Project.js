@@ -1,4 +1,5 @@
 import React from "react";
+import { Parallax } from "react-scroll-parallax";
 import ProjectImage from "../../asset/project/project_1.png";
 import {
   ProjectContainer,
@@ -16,10 +17,12 @@ const Project = () => {
       <SectionHeading>Projects</SectionHeading>
       <ProjectContainer>
         <ProjectImageContainer>
-          <Image src={ProjectImage} alt="project" />
+          <Parallax speed={-30}>
+            <Image src={ProjectImage} alt="project1" />
+          </Parallax>
         </ProjectImageContainer>
         <ProjectInfoContainer>
-          <ProjectHeading>Smaple project</ProjectHeading>
+          <ProjectHeading>Chess Monkey</ProjectHeading>
         </ProjectInfoContainer>
       </ProjectContainer>
     </ProjectSection>
