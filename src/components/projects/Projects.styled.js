@@ -23,6 +23,7 @@ export const SectionHeading = styled.p`
 `;
 export const ProjectContainer = styled.section`
 display:flex;
+align-items:center;
 ` 
 export const ProjectImageContainer = styled.div`
 width:60%;
@@ -34,7 +35,10 @@ width:100%;
 `
 export const ProjectInfoContainer = styled.div`
 width:40%;
-padding:4rem 2rem;
+padding:4rem 2.5rem;
+display:flex;
+flex-direction:column;
+align-items:center;
 `
 export const ProjectHeading = styled.p`
 font-size:2.5rem;
@@ -42,6 +46,26 @@ color:${({theme})=>theme.colors.primary.main};
 `
 
 export const ProjectDetail = styled.p`
-font-size:2.5rem;
-color:${({theme})=>theme.colors.primary.main};
+margin:3rem 0;
+font-size:1.2rem;
+line-height:1.8rem;
+color:${({theme})=>theme.colors.primary.contrastText};
+text-align:center;
 `
+
+export const ProjectButton = styled.button`
+  font-size: 1.2rem;
+  width: 200px;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  border: transparent;
+  border-radius: 5px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition:all .3s ease;
+  background: ${(props) => props.theme.colors.primary.main};
+  &:hover {
+    box-shadow: 0px 5px 10px 0px rgba(0, 189, 149, 0.4);
+  }
+`;
