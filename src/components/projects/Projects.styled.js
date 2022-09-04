@@ -27,6 +27,7 @@ export const SectionHeading = styled.p`
 export const ProjectContainer = styled.section`
   display: flex;
   align-items: center;
+  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
@@ -34,7 +35,7 @@ export const ProjectContainer = styled.section`
   }
 `;
 export const ProjectImageContainer = styled.div`
-  width: 60%;
+  width: 62%;
   background: ${({ theme }) => theme.colors.primary.darker};
   overflow: hidden;
   @media (max-width: 768px) {
@@ -45,7 +46,7 @@ export const Image = styled.img`
   width: 100%;
 `;
 export const ProjectInfoContainer = styled.div`
-  width: 40%;
+  width: 38%;
   padding: 4rem 2.5rem;
   display: flex;
   flex-direction: column;

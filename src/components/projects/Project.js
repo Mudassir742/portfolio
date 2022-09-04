@@ -1,15 +1,25 @@
 import React from "react";
 import ProjectImage from "../../asset/project/project_1.png";
 import ProjectCard from "./ProjectCard";
-import {
-  ProjectSection,
-  SectionHeading,
-} from "./Projects.styled";
+import { ProjectSection, SectionHeading } from "./Projects.styled";
 
 const Project = () => {
   return (
     <ProjectSection>
       <SectionHeading>Projects</SectionHeading>
+      <ProjectCard
+        projectImage={ProjectImage}
+        projectName="Chess Money"
+        projectDetail="Chess Money is a joint venture between a cohort of ex-bankers and a listed company that provides human resources management services.
+                       Each of the Chess partners’ competencies is leveraged to offer the best lending experience."
+      />
+      <ProjectCard
+        projectImage={ProjectImage}
+        projectName="Chess Money"
+        projectDetail="Chess Money is a joint venture between a cohort of ex-bankers and a listed company that provides human resources management services.
+                       Each of the Chess partners’ competencies is leveraged to offer the best lending experience."
+        reverse={true}
+      />
       <ProjectCard
         projectImage={ProjectImage}
         projectName="Chess Money"

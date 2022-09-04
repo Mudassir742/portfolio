@@ -10,9 +10,9 @@ import {
   ProjectDetail,
 } from "./Projects.styled";
 
-const ProjectCard = ({ projectImage, projectName, projectDetail }) => {
+const ProjectCard = ({ projectImage, projectName, projectDetail,reverse }) => {
   return (
-    <ProjectContainer>
+    <ProjectContainer reverse={reverse}>
       <ProjectImageContainer>
         <Parallax speed={-25}>
           <Image src={projectImage} alt="project1" />
