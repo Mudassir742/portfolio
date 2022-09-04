@@ -10,21 +10,27 @@ const Project = () => {
       <ProjectCard
         projectImage={ProjectImage}
         projectName="Chess Money"
-        projectDetail="Chess Money is a joint venture between a cohort of ex-bankers and a listed company that provides human resources management services.
-                       Each of the Chess partners’ competencies is leveraged to offer the best lending experience."
+        projectDetail="Chess Money is a joint venture between a cohort of ex-bankers
+                       and a listed company that provides human resources management services.
+                       Each of the Chess partners’ competencies is leveraged to offer the best
+                       lending experience."
       />
       <ProjectCard
         projectImage={ProjectImage}
         projectName="Chess Money"
-        projectDetail="Chess Money is a joint venture between a cohort of ex-bankers and a listed company that provides human resources management services.
-                       Each of the Chess partners’ competencies is leveraged to offer the best lending experience."
+        projectDetail="Chess Money is a joint venture between a cohort of ex-bankers
+                       and a listed company that provides human resources management services.
+                       Each of the Chess partners’ competencies is leveraged to offer the best 
+                       lending experience."
         reverse={true}
       />
       <ProjectCard
         projectImage={ProjectImage}
         projectName="Chess Money"
-        projectDetail="Chess Money is a joint venture between a cohort of ex-bankers and a listed company that provides human resources management services.
-                       Each of the Chess partners’ competencies is leveraged to offer the best lending experience."
+        projectDetail="Chess Money is a joint venture between a cohort of ex-bankers
+                       and a listed company that provides human resources management services.
+                       Each of the Chess partners’ competencies is leveraged to offer the best 
+                       lending experience."
       />
     </ProjectSection>
   );
