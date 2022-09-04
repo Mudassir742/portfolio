@@ -31,9 +31,7 @@ const Project = () => {
             Each of the Chess partners’ competencies is leveraged to offer the
             best lending experience.
           </ProjectDetail>
-          <ProjectButton>
-            View Project
-          </ProjectButton>
+          <ProjectButton>View Project</ProjectButton>
         </ProjectInfoContainer>
       </ProjectContainer>
     </ProjectSection>
