@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+//main component styles
 export const ProjectSection = styled.section`
   margin: 6rem 0;
   width: 100vw;
@@ -21,6 +22,8 @@ export const SectionHeading = styled.p`
     font-size: 1.8rem;
   }
 `;
+
+//projectcard styles
 export const ProjectContainer = styled.section`
   display: flex;
   align-items: center;
