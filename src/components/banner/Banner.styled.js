@@ -25,9 +25,9 @@ export const ContentSection = styled.div`
 
 export const IntroSection = styled.div`
   width: 60%;
-  display:flex;
-  gap:3rem;
-  align-items:center;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
   @media (max-width: 1030px) {
     width: 45%;
   }
@@ -39,8 +39,7 @@ export const IntroSection = styled.div`
   }
 `;
 
-export const IntroContentSection = styled.div`
-`
+export const IntroContentSection = styled.div``;
 
 export const SocialLinkContainer = styled.div`
   display: flex;
@@ -54,24 +53,24 @@ export const SocialLinkContainer = styled.div`
 
 export const Partition = styled.span`
   border-right: 1px solid ${(props) => props.theme.colors.primary.main};
-  height: 70px;
+  height: 60px;
   display: inline-block;
-  margin-top:.6rem;
+  margin-top: 0.6rem;
 `;
 export const Circle = styled.div`
-  width: 36px;
-  height: 36px;
-  border-radius: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
   border: 2px solid ${(props) => props.theme.colors.primary.main};
-  margin-bottom:.8rem;
+  margin-bottom: 0.8rem;
 `;
 export const SocialLink = styled.a`
   transform: rotate(-90deg);
   margin: 1.5rem 0;
   color: ${(props) => props.theme.colors.primary.main};
-  text-decoration:none;
-  letter-spacing:1px;
-  cursor:pointer;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
 `;
 
 export const Typo = styled.span`
@@ -151,7 +150,7 @@ export const HeroButton = styled.button`
   padding: 0.8rem 0;
   cursor: pointer;
   border: transparent;
-  border-radius: 10px;
+  border-radius: 6px;
   color: white;
   letter-spacing: 2px;
   font-weight: bold;
@@ -167,7 +166,7 @@ export const PhotoContainer = styled.div`
   position: relative;
   display: flex;
   padding: 2rem 0.8rem;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   @media (max-width: 1030px) {
     width: 55%;
@@ -183,13 +182,33 @@ export const PhotoContainer = styled.div`
   }
 `;
 
+// export const PhotoBackground = styled.div`
+//   background: ${(props) => props.theme.colors.primary.main};
+//   width:100%;
+//   height:100%;
+//   box-sizing:border-box;
+//   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+// }
+// `;
+
+export const PhotoFrame = styled.div`
+  max-width: 280px;
+  max-height: 320px;
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  position: relative;
+`;
+
 export const PhotoBackground = styled.div`
-  background: ${(props) => props.theme.colors.primary.main};
-  width:100%;
-  height:100%;
-  box-sizing:border-box;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 15px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 `;
 
 export const QouteCard = styled.h5`

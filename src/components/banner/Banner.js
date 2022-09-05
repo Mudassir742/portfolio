@@ -19,6 +19,7 @@ import {
   SocialLink,
   Circle,
   IntroContentSection,
+  PhotoFrame,
 } from "./Banner.styled";
 
 const Banner = () => {
@@ -36,7 +37,7 @@ const Banner = () => {
           <IntroContentSection>
             <Intro>Hello, </Intro>
             <Typo>I'm</Typo>
-            <DeveloperName>Mudassir Waheed</DeveloperName>
+            <DeveloperName>Mudassir Waheed.</DeveloperName>
             <Technology>MERN Stack Developer</Technology>
             <IntroDetail>
               I am a full stack web developer with 2 years of experience. I have
@@ -46,8 +47,10 @@ const Banner = () => {
           </IntroContentSection>
         </IntroSection>
         <PhotoContainer>
-          {/* <PhotoBackground></PhotoBackground>
-          <QouteCard className="qoute">
+          <PhotoFrame>
+            <PhotoBackground></PhotoBackground>
+          </PhotoFrame>
+          {/* <QouteCard className="qoute">
             "make it Simple, make it Right, make it Work."
           </QouteCard> */}
         </PhotoContainer>
