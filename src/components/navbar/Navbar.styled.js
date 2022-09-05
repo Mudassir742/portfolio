@@ -87,7 +87,7 @@ export const StyledLink = styled.a`
       : props.theme.colors.primary.light};
   text-decoration: none;
   position: relative;
-  opacity: ${({ showMenu }) => (showMenu ? "1" : "0")};
+
   transition: opacity 0.3s ease-out;
   transition: width background 0.7s ease-in-out;
   &::before {
@@ -107,6 +107,10 @@ export const StyledLink = styled.a`
   }
   &:hover:before {
     width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    opacity: ${({ showMenu }) => (showMenu ? "1" : "0")};
   }
 `;
 
