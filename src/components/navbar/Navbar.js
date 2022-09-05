@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { FiMenu } from "react-icons/fi";
-import { GiCrossedBones } from "react-icons/gi";
 import {
   LinkContainer,
   Logo,
@@ -13,11 +11,9 @@ import {
   MiddleBar,
   BottomBar,
 } from "./Navbar.styled";
-import { useTheme } from "styled-components";
 import LogoIcon from "../../asset/icons/logo.png";
 
 const Navbar = () => {
-  const theme = useTheme();
   const [isStickey, setIsStickey] = useState(false);
   const [showMenu, setShowMneu] = useState(false);
 
@@ -35,24 +31,25 @@ const Navbar = () => {
       </Logo>
       <NavigationWrapper showMenu={showMenu}>
         <LinkContainer showMenu={showMenu}>
-          <StyledLink href="/" active={true}>
+          <StyledLink href="/" active={true} showMenu={showMenu}>
             Home
           </StyledLink>
 
-          <StyledLink href="/">Services</StyledLink>
+          <StyledLink href="/" showMenu={showMenu}>
+            Services
+          </StyledLink>
 
-          <StyledLink href="/">Projects</StyledLink>
+          <StyledLink href="/" showMenu={showMenu}>
+            Projects
+          </StyledLink>
 
-          <StyledLink href="/">Contact</StyledLink>
+          <StyledLink href="/" showMenu={showMenu}>
+            Contact
+          </StyledLink>
         </LinkContainer>
       </NavigationWrapper>
 
       <NavIcon onClick={() => setShowMneu(!showMenu)}>
-        {/* {!showMenu ? (
-          <FiMenu size="40px" color={theme.colors.primary.main} />
-        ) : (
-          <GiCrossedBones size="40px" color={theme.colors.primary.main} />
-        )} */}
         <TopBar showMenu={showMenu}></TopBar>
         <MiddleBar showMenu={showMenu}></MiddleBar>
         <BottomBar showMenu={showMenu}></BottomBar>

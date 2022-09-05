@@ -46,13 +46,13 @@ export const LogoText = styled.p`
 export const NavigationWrapper = styled.nav`
   background: ${(props) => props.theme.colors.primary.dark};
   @media (max-width: 768px) {
-    width: 63vw;
+    width: 100vw;
     height: 100vh;
     position: fixed;
-    transition: ${({ showMenu }) =>
-      showMenu ? "transform .4s ease-in" : "transform .55s ease-in"};
+
     transform: ${({ showMenu }) =>
-      showMenu ? "translateX(0%)" : "translateX(-110%)"};
+      showMenu ? "translateY(0%)" : "translateY(-110%)"};
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
     left: 0;
     top: 0;
     z-index: 100;
@@ -68,15 +68,11 @@ export const LinkContainer = styled.div`
     height: 100%;
     flex-direction: column;
     justify-content: center;
-    width: 60vw;
+    width: 100%;
     background: ${(props) => props.theme.colors.primary.dark};
     transform: ${({ showMenu }) =>
-      showMenu ? "translateX(0%)" : "translateX(-110%)"};
-    transition: ${({ showMenu }) =>
-      showMenu
-        ? "transform .4s cubic-bezier(0, 1, 0.76, 0.97)"
-        : "transform .2s cubic-bezier(0, 1, 0.76, 0.97)"};
-    border-right: 22px solid ${(props) => props.theme.colors.background.bg1};
+      showMenu ? "translateY(0%)" : "translateY(-110%)"};
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
   }
 `;
 
@@ -91,7 +87,9 @@ export const StyledLink = styled.a`
       : props.theme.colors.primary.light};
   text-decoration: none;
   position: relative;
-  transition: all 0.7s ease-in-out;
+  opacity: ${({ showMenu }) => (showMenu ? "1" : "0")};
+  transition: opacity 0.3s ease-out;
+  transition: width background 0.7s ease-in-out;
   &::before {
     content: "";
     position: absolute;
@@ -114,14 +112,13 @@ export const StyledLink = styled.a`
 
 export const NavIcon = styled.div`
   display: none;
-  width: 35px;
-  height: 35px;
-  overlfow: hidden;
-  position: relative;
+  width: 30px;
+  height: 30px;
   @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 4rem;
   }
 `;
 
@@ -137,54 +134,30 @@ export const Image = styled.img`
 `;
 
 export const TopBar = styled.div`
-  position: relative;
-  transition: width 1s ease;
-  transition: transform 0.6s ease;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: ${({ showMenu }) => (showMenu ? "141%" : "50%")};
-    transform: ${({ showMenu }) =>
-      showMenu ? "rotate(45deg)" : "rotate(0deg)"};
-    transform-origin: 0% 0%;
-    height: 2px;
-    background: ${({ theme }) => theme.colors.primary.main};
-    transition: width 1s ease;
-    transition: transform 0.6s ease;
-  }
+  width: 15px;
+  height: 2px;
+  background: ${(props) => props.theme.colors.primary.main};
+  margin-bottom: 4px;
+  transition: transform 0.2s ease;
+  transform: ${({ showMenu }) =>
+    showMenu ? "translateX(1px) rotate(45deg)" : "rotate(0deg)"};
 `;
 export const MiddleBar = styled.div`
-  transition: width 1s ease;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: ${({ showMenu }) => (showMenu ? "0%" : "100%")};
-    height: 2px;
-    background: ${({ theme }) => theme.colors.primary.main};
-    transition: width 1s ease;
-  }
+  width: 30px;
+  height: 2px;
+  margin-bottom: 4px;
+  background: ${(props) => props.theme.colors.primary.main};
+  transform: ${({ showMenu }) =>
+    showMenu ? "translateX(0px) rotate(-45deg)" : "rotate(0deg)"};
+  transition: transform 0.2s ease;
 `;
 export const BottomBar = styled.div`
-transition: width 1s ease;
-transition: transform 0.6s ease;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: ${({ showMenu }) => (showMenu ? "140%" : "50%")};
-    transform: ${({ showMenu }) =>
-      showMenu ? "rotate(-45deg)" : "rotate(0deg)"};
-    transform-origin: 0% 0%;
-    height: 2px;
-    background: ${({ theme }) => theme.colors.primary.main};
-    transition: width 1s ease;
-    transition: transform 0.6s ease;
-  }
+  width: 15px;
+  height: 2px;
+  background: ${(props) => props.theme.colors.primary.main};
+  transform: ${({ showMenu }) =>
+    showMenu ? "translateX(-2px) rotate(45deg)" : "rotate(0deg)"};
+  float: right;
+  margin-bottom: 4px;
+  transition: transform 0.2s ease;
 `;

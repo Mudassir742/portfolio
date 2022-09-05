@@ -13,7 +13,7 @@ body {
     background-color: #3a3a3c;
 }
 
-.qoute {
+/* .qoute {
     animation: mover 1s infinite alternate;
     color:#2a323d;
 }
@@ -26,4 +26,4 @@ body {
     100% {
         transform: translateY(-8px);
     }
-}
+} */
