@@ -15,6 +15,7 @@ body {
 
 .qoute {
     animation: mover 1s infinite alternate;
+    color:#2a323d;
 }
 
 @keyframes mover {

@@ -16,6 +16,10 @@ export const NavbarContainer = styled.header`
     @media (max-width: 768px) {
       padding: ${(props) => (props.isStickey ? "1.4rem 3rem;" : "1.8rem 4rem;")}
     }
+    @media (max-width: 530px) {
+      padding: ${(props) =>
+        props.isStickey ? "1.4rem 2rem;" : "1.8rem 2.5rem;"}
+    }
 `;
 
 export const Logo = styled.div`

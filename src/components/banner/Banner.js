@@ -7,13 +7,11 @@ import {
   HeroContainer,
   PhotoContainer,
   Slogan,
-  Technology,
+  DeveloperName,
   Intro,
   Typo,
   HeroButton,
   PhotoBackground,
-  IntroDetail,
-  QouteCard,
   SocialLinkContainer,
   Partition,
   SocialLink,
@@ -44,15 +42,6 @@ const Banner = () => {
             </TextContainer>
             <Slogan>Where imagination meets creativity.</Slogan>
             <HeroButton>Let's Talk</HeroButton>
-            {/* <Intro>Hello, </Intro>
-            <Typo>I'm</Typo>
-            <DeveloperName>Mudassir Waheed.</DeveloperName>
-            <Technology>MERN Stack Developer</Technology>
-            <IntroDetail>
-              I am a full stack web developer with 2 years of experience. I have
-              developed amaizing web apps and worked with different clients.
-            </IntroDetail>
-            <HeroButton>Let's Talk</HeroButton> */}
           </IntroContentSection>
         </IntroSection>
         <PhotoContainer>
@@ -64,6 +53,7 @@ const Banner = () => {
           </QouteCard> */}
         </PhotoContainer>
       </ContentSection>
+      <DeveloperName>Mudassir Waheed.</DeveloperName>
     </HeroContainer>
   );
 };
