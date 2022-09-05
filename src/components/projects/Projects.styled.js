@@ -12,7 +12,7 @@ export const SectionHeading = styled.p`
   text-align: center;
   margin: 2rem 0 4rem 0;
   font-size: 3rem;
-  color: white;
+  color: ${({ theme }) => theme.colors.primary.lighter};
   letter-spacing: 1px;
   @media (max-width: 872px) {
     font-size: 2.2rem;
@@ -79,7 +79,7 @@ export const ProjectDetail = styled.p`
 
 export const ProjectButton = styled.button`
   font-size: 1.2rem;
-  width: 150px;
+  width: 180px;
   padding: 0.8rem 0;
   cursor: pointer;
   border: transparent;
@@ -90,10 +90,15 @@ export const ProjectButton = styled.button`
   transition: all 0.3s ease;
   background: ${(props) => props.theme.colors.primary.main};
   &:hover {
-    box-shadow: 0px 5px 10px 0px rgba(0, 189, 149, 0.4);
+    box-shadow: 0px 2px 5px 0px rgba(212, 188, 145, 0.5);
   }
   @media (max-width: 970px) {
     font-size: 1rem;
+    width: 150px;
     font-weight: normal;
+    letter-spacing: 1px;
+  }
+  @media (max-width: 530px) {
+    width: 150px;
   }
 `;

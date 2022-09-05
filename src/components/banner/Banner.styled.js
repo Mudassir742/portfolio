@@ -145,6 +145,7 @@ export const HeroButton = styled.button`
   font-weight: bold;
   background: ${(props) => props.theme.colors.primary.main};
   &:hover {
+    box-shadow: 0px 2px 5px 0px rgba(212, 188, 145, 0.5);
   }
   @media (max-width: 530px) {
     width: 160px;
