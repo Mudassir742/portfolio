@@ -25,6 +25,9 @@ export const ContentSection = styled.div`
 
 export const IntroSection = styled.div`
   width: 60%;
+  display:flex;
+  gap:3rem;
+  align-items:center;
   @media (max-width: 1030px) {
     width: 45%;
   }
@@ -34,6 +37,41 @@ export const IntroSection = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
+`;
+
+export const IntroContentSection = styled.div`
+`
+
+export const SocialLinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  justify-content: space-between;
+  gap: 1.2rem;
+`;
+
+export const Partition = styled.span`
+  border-right: 1px solid ${(props) => props.theme.colors.primary.main};
+  height: 70px;
+  display: inline-block;
+  margin-top:.6rem;
+`;
+export const Circle = styled.div`
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  border: 2px solid ${(props) => props.theme.colors.primary.main};
+  margin-bottom:.8rem;
+`;
+export const SocialLink = styled.a`
+  transform: rotate(-90deg);
+  margin: 1.5rem 0;
+  color: ${(props) => props.theme.colors.primary.main};
+  text-decoration:none;
+  letter-spacing:1px;
+  cursor:pointer;
 `;
 
 export const Typo = styled.span`
