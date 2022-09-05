@@ -26,8 +26,8 @@ export const ContentSection = styled.div`
 export const IntroSection = styled.div`
   width: 60%;
   display: flex;
-  gap: 3rem;
   align-items: center;
+  gap: 3rem;
   @media (max-width: 1030px) {
     width: 45%;
   }
@@ -74,7 +74,7 @@ export const SocialLink = styled.a`
 `;
 
 export const Typo = styled.span`
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: ${(props) => props.theme.colors.primary.main};
   letter-spacing: 2px;
   @media (max-width: 1030px) {
@@ -85,7 +85,7 @@ export const Typo = styled.span`
   }
 `;
 export const Intro = styled.span`
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: ${(props) => props.theme.colors.primary.contrastText};
   letter-spacing: 2px;
   @media (max-width: 1030px) {
@@ -95,14 +95,24 @@ export const Intro = styled.span`
     font-size: 1.2rem;
   }
 `;
-export const DeveloperName = styled.h2`
-  font-size: 3rem;
-  margin: 1rem 0 0.7rem 0;
+
+export const TextContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+`;
+
+export const Line = styled.div`
+  width: 50px;
+  border-bottom: 1px solid ${(props) => props.theme.colors.primary.main};
+`;
+
+export const Slogan = styled.h2`
+  font-size: 2.5rem;
+  margin: 2.5rem 0;
   color: ${(props) => props.theme.colors.primary.main};
   letter-spacing: 2px;
-  @media (max-width: 1130px) {
-    font-size: 2.5rem;
-  }
   @media (max-width: 1030px) {
     font-size: 2rem;
   }
@@ -181,15 +191,6 @@ export const PhotoContainer = styled.div`
     justify-content: center;
   }
 `;
-
-// export const PhotoBackground = styled.div`
-//   background: ${(props) => props.theme.colors.primary.main};
-//   width:100%;
-//   height:100%;
-//   box-sizing:border-box;
-//   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-// }
-// `;
 
 export const PhotoFrame = styled.div`
   max-width: 280px;
