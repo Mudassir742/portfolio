@@ -6,40 +6,54 @@ import {
   IntroSection,
   HeroContainer,
   PhotoContainer,
+  Slogan,
   DeveloperName,
-  Technology,
   Intro,
   Typo,
   HeroButton,
   PhotoBackground,
-  IntroDetail,
-  QouteCard,
+  SocialLinkContainer,
+  Partition,
+  SocialLink,
+  Circle,
+  IntroContentSection,
+  PhotoFrame,
+  TextContainer,
+  Line,
 } from "./Banner.styled";
-
-//import "./Banner.css";
 
 const Banner = () => {
   return (
     <HeroContainer>
       <ContentSection>
         <IntroSection>
-          <Intro>Hello, </Intro>
-          <Typo>I'm</Typo>
-          <DeveloperName>Mudassir Waheed</DeveloperName>
-          <Technology>MERN Stack Developer</Technology>
-          <IntroDetail>
-            I am a full stack web developer with 2 years of experience. I have
-            developed amaizing web apps and worked with different clients.
-          </IntroDetail>
-          <HeroButton>Let's Talk</HeroButton>
+          <SocialLinkContainer>
+            <Partition></Partition>
+            <SocialLink>Github</SocialLink>
+            <Circle></Circle>
+            <SocialLink>LinkedIn</SocialLink>
+            <Partition></Partition>
+          </SocialLinkContainer>
+          <IntroContentSection>
+            <Intro>Mudassir Waheed.</Intro>
+            <TextContainer>
+              <Line></Line>
+              <Typo>MERN DEVELOPER</Typo>
+            </TextContainer>
+            <Slogan>Where imagination meets creativity.</Slogan>
+            <HeroButton>Let's Talk</HeroButton>
+          </IntroContentSection>
         </IntroSection>
         <PhotoContainer>
-          <PhotoBackground></PhotoBackground>
-          <QouteCard className="qoute">
+          <PhotoFrame>
+            <PhotoBackground></PhotoBackground>
+          </PhotoFrame>
+          {/* <QouteCard className="qoute">
             "make it Simple, make it Right, make it Work."
-          </QouteCard>
+          </QouteCard> */}
         </PhotoContainer>
       </ContentSection>
+      <DeveloperName>Mudassir Waheed.</DeveloperName>
     </HeroContainer>
   );
 };

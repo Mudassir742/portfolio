@@ -11,7 +11,7 @@ export const SectionHeading = styled.p`
   text-align: center;
   margin: 2rem 0 3rem 0;
   font-size: 3rem;
-  color: white;
+  color: ${({ theme }) => theme.colors.primary.lighter};
   letter-spacing: 1px;
   @media (max-width: 872px) {
     font-size: 2.5rem;
@@ -38,12 +38,12 @@ export const TechContent = styled.div`
 `;
 
 export const TechCard = styled.div`
-  background: ${({ theme }) => theme.colors.background.bg1};
+  background: ${({ theme }) => theme.colors.primary.darker};
   padding: 2.1rem 1.5rem;
   border-radius: 5px;
   color: white;
   cursor: pointer;
-  box-shadow: 0px 2px 5px 5px rgba(217, 217, 217, 0.2);
+  box-shadow: 0px 2px 5px 2px rgba(123, 124, 125, 0.4);
   @media (max-width: 872px) {
     padding: 2rem 1.2rem;
   }
@@ -62,6 +62,7 @@ export const TechInfo = styled.div``;
 export const TechHeading = styled.span`
   font-size: 2rem;
   letter-spacing: 1px;
+  color: ${({ theme }) => theme.colors.primary.lighter};
   @media (max-width: 872px) {
     font-size: 1.6rem;
   }
@@ -73,6 +74,7 @@ export const TechDetail = styled.p`
   margin-top: 0.9rem;
   line-height: 1.5rem;
   letter-spacing: 1px;
+  color: ${({ theme }) => theme.colors.primary.lighter};
   @media (max-width: 872px) {
     font-size: 0.9rem;
   }

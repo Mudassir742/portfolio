@@ -15,7 +15,7 @@ export const SectionHeading = styled.p`
   text-align: center;
   margin: 2rem 0 4rem 0;
   font-size: 3rem;
-  color: white;
+  color: ${({ theme }) => theme.colors.primary.lighter};
   letter-spacing: 1px;
   @media (max-width: 872px) {
     font-size: 2.5rem;
@@ -44,7 +44,7 @@ export const ServiceCard = styled.div`
   flex-direction: column;
   align-items: center;
   background: ${({ theme }) => theme.colors.primary.dark};
-  color: white;
+  color: ${({ theme }) => theme.colors.primary.lighter};
   padding: 1.5rem 2rem;
   border-radius: 6px;
   border-bottom: 5px solid ${({ theme }) => theme.colors.primary.main};
@@ -91,6 +91,7 @@ export const ServiceHeading = styled.p`
   margin: 1.5rem 0 0.5rem 0;
   font-weight: 500;
   letter-spacing: 1px;
+  color: ${({ theme }) => theme.colors.primary.lighter};
   @media (max-width: 860px) {
     font-size: 1.2rem;
   }
@@ -101,4 +102,5 @@ export const ServiceDetail = styled.p`
   line-height: 1.5rem;
   letter-spacing: 1px;
   font-size: 0.9rem;
+  color: ${({ theme }) => theme.colors.primary.lighter};
 `;

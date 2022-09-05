@@ -3,12 +3,14 @@ import styled from "styled-components";
 export const HeroContainer = styled.section`
   width: 100vw;
   max-width: 100%;
+  position: relative;
+  overflow: hidden;
   background: ${(props) => props.theme.colors.primary.dark};
   padding: 8rem 6rem 4rem 6rem;
   @media (max-width: 768px) {
     padding: 6rem 4rem 4rem 4rem;
   }
-  @media (max-width: 385px) {
+  @media (max-width: 530px) {
     padding: 6rem 2rem 4rem 2rem;
   }
 `;
@@ -25,133 +27,171 @@ export const ContentSection = styled.div`
 
 export const IntroSection = styled.div`
   width: 60%;
-  @media (max-width: 1030px) {
-    width: 45%;
-  }
-  @media (max-width: 875px) {
-    width: 50%;
-  }
+  display: flex;
+  align-items: center;
+  gap: 3rem;
   @media (max-width: 768px) {
+    margin-top: 2rem;
     width: 100%;
+  }
+  @media (max-width: 530px) {
+    gap: 2rem;
   }
 `;
 
-export const Typo = styled.span`
-  font-size: 2rem;
+export const IntroContentSection = styled.div``;
+
+export const SocialLinkContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  justify-content: space-between;
+  gap: 1.2rem;
+`;
+
+export const Partition = styled.span`
+  border-right: 1px solid ${(props) => props.theme.colors.primary.main};
+  height: 60px;
+  display: inline-block;
+  margin-top: 0.6rem;
+`;
+export const Circle = styled.div`
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 2px solid ${(props) => props.theme.colors.primary.main};
+  margin-bottom: 0.8rem;
+`;
+export const SocialLink = styled.a`
+  transform: rotate(-90deg);
+  margin: 1.5rem 0;
   color: ${(props) => props.theme.colors.primary.main};
-  letter-spacing: 2px;
-  @media (max-width: 1030px) {
-    font-size: 1.5rem;
-  }
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+`;
+
+export const Typo = styled.span`
+  font-size: 1.2rem;
+  color: #7b7c7d;
+  letter-spacing: 1px;
   @media (max-width: 530px) {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 `;
 export const Intro = styled.span`
-  font-size: 2rem;
-  color: ${(props) => props.theme.colors.primary.contrastText};
-  letter-spacing: 2px;
-  @media (max-width: 1030px) {
-    font-size: 1.5rem;
-  }
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #7b7c7d;
+  letter-spacing: 1px;
   @media (max-width: 530px) {
     font-size: 1.2rem;
   }
 `;
-export const DeveloperName = styled.h2`
-  font-size: 3rem;
-  margin: 1rem 0 0.7rem 0;
+
+export const TextContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  @media (max-width: 530px) {
+    gap: 1.5rem;
+  }
+`;
+
+export const Line = styled.div`
+  width: 50px;
+  border-bottom: 1px solid #7b7c7d;
+`;
+
+export const Slogan = styled.h2`
+  font-size: 2.5rem;
+  margin: 3rem 0;
   color: ${(props) => props.theme.colors.primary.main};
   letter-spacing: 2px;
-  @media (max-width: 1130px) {
-    font-size: 2.5rem;
-  }
   @media (max-width: 1030px) {
     font-size: 2rem;
   }
   @media (max-width: 530px) {
     font-size: 1.5rem;
-  }
-`;
-export const Technology = styled.span`
-  font-size: 1.8rem;
-  display: block;
-  color: white;
-  letter-spacing: 2px;
-  margin-bottom: 2rem;
-  @media (max-width: 1030px) {
-    font-size: 1.4rem;
-  }
-  @media (max-width: 530px) {
-    font-size: 1.1rem;
+    margin: 2rem 0;
   }
 `;
 
-export const IntroDetail = styled.span`
-  text-align: left;
-  font-size: 1.1rem;
-  line-height: 1.6rem;
-  max-width: 450px;
-  width: 100%;
-  display: block;
-  color: white;
+export const DeveloperName = styled.h2`
+  font-size: 4rem;
+  position: absolute;
+  z-index: 1;
+  right: 4rem;
+  bottom: -25px;
+  color: ${(props) => props.theme.colors.background.bg2};
   letter-spacing: 1px;
-  @media (max-width: 1030px) {
-    font-size: 1rem;
-  }
   @media (max-width: 768px) {
-    max-width: 600px;
-  }
-  @media (max-width: 500px) {
-    font-size: 0.9rem;
+    display: none;
   }
 `;
+
 export const HeroButton = styled.button`
   font-size: 1.2rem;
-  margin-top: 3rem;
   width: 150px;
   padding: 0.8rem 0;
   cursor: pointer;
   border: transparent;
-  border-radius: 10px;
+  border-radius: 6px;
   color: white;
   letter-spacing: 2px;
   font-weight: bold;
-  box-shadow: 0px 5px 10px 0px rgba(0, 189, 149, 0.4);
   background: ${(props) => props.theme.colors.primary.main};
   &:hover {
+    box-shadow: 0px 2px 5px 0px rgba(212, 188, 145, 0.5);
+  }
+  @media (max-width: 530px) {
+    width: 160px;
+    font-size: 1rem;
   }
 `;
 
 export const PhotoContainer = styled.div`
-  height: 400px;
-  width: 50%;
+  height: 320px;
+  width: 40%;
   position: relative;
   display: flex;
-  padding: 2rem 0.8rem;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  @media (max-width: 1030px) {
-    width: 55%;
-  }
-  @media (max-width: 875px) {
-    width: 50%;
-  }
   @media (max-width: 768px) {
     margin: 1.2rem 0;
     width: 100%;
-    height: 350px;
     justify-content: center;
+  }
+  @media (max-width: 530px) {
+    height: 280px;
+  }
+`;
+
+export const PhotoFrame = styled.div`
+  max-width: 280px;
+  max-height: 320px;
+  border: 2px solid ${(props) => props.theme.colors.primary.main};
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  position: relative;
+  @media (max-width: 530px) {
+    max-height: 280px;
+    max-width: 240px;
   }
 `;
 
 export const PhotoBackground = styled.div`
-  background: ${(props) => props.theme.colors.primary.main};
-  width:100%;
-  height:100%;
-  box-sizing:border-box;
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-}
+  width: 100%;
+  height: 100%;
+  background: ${(props) => props.theme.colors.primary.darker};
+  border-radius: 15px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
 `;
 
 export const QouteCard = styled.h5`

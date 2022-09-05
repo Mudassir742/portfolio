@@ -16,13 +16,11 @@ function App() {
   return (
     <ThemeProvider>
       <ParallaxProvider>
-      <div className="App">
         <Navbar />
         <Banner />
         <Services />
         <Technology />
         <Project />
-      </div>
       </ParallaxProvider>
     </ThemeProvider>
   );

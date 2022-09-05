@@ -16,6 +16,10 @@ export const NavbarContainer = styled.header`
     @media (max-width: 768px) {
       padding: ${(props) => (props.isStickey ? "1.4rem 3rem;" : "1.8rem 4rem;")}
     }
+    @media (max-width: 530px) {
+      padding: ${(props) =>
+        props.isStickey ? "1.4rem 2rem;" : "1.8rem 2.5rem;"}
+    }
 `;
 
 export const Logo = styled.div`
@@ -42,13 +46,13 @@ export const LogoText = styled.p`
 export const NavigationWrapper = styled.nav`
   background: ${(props) => props.theme.colors.primary.dark};
   @media (max-width: 768px) {
-    width: 63vw;
+    width: 100vw;
     height: 100vh;
     position: fixed;
-    transition: ${({ showMenu }) =>
-      showMenu ? "transform .4s ease-in" : "transform .55s ease-in"};
+
     transform: ${({ showMenu }) =>
-      showMenu ? "translateX(0%)" : "translateX(-110%)"};
+      showMenu ? "translateY(0%)" : "translateY(-110%)"};
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
     left: 0;
     top: 0;
     z-index: 100;
@@ -64,15 +68,11 @@ export const LinkContainer = styled.div`
     height: 100%;
     flex-direction: column;
     justify-content: center;
-    width: 60vw;
+    width: 100%;
     background: ${(props) => props.theme.colors.primary.dark};
     transform: ${({ showMenu }) =>
-      showMenu ? "translateX(0%)" : "translateX(-110%)"};
-    transition: ${({ showMenu }) =>
-      showMenu
-        ? "transform .4s cubic-bezier(0, 1, 0.76, 0.97)"
-        : "transform .2s cubic-bezier(0, 1, 0.76, 0.97)"};
-    border-right: 22px solid ${(props) => props.theme.colors.background.bg1};
+      showMenu ? "translateY(0%)" : "translateY(-110%)"};
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.8s;
   }
 `;
 
@@ -83,11 +83,13 @@ export const StyledLink = styled.a`
   font-weight: bold;
   color: ${(props) =>
     props.active
-      ? props.theme.colors.primary.light
-      : props.theme.colors.primary.contrastText};
+      ? props.theme.colors.primary.main
+      : props.theme.colors.primary.light};
   text-decoration: none;
   position: relative;
-  transition: all 0.7s ease-in-out;
+  opacity: ${({ showMenu }) => (showMenu ? "1" : "0")};
+  transition: opacity 0.3s ease-out;
+  transition: width background 0.7s ease-in-out;
   &::before {
     content: "";
     position: absolute;
@@ -95,13 +97,13 @@ export const StyledLink = styled.a`
     bottom: 0;
     width: ${(props) => (props.active ? "100%" : "0%")};
     height: 2px;
-    background: ${(props) => props.theme.colors.primary.light};
+    background: ${(props) => props.theme.colors.primary.main};
     transition: all 0.7s ease-in-out;
   }
 
   &:hover {
     cursor: pointer;
-    color: ${(props) => props.theme.colors.primary.light};
+    color: ${(props) => props.theme.colors.primary.main};
   }
   &:hover:before {
     width: 100%;
@@ -110,8 +112,13 @@ export const StyledLink = styled.a`
 
 export const NavIcon = styled.div`
   display: none;
+  width: 30px;
+  height: 30px;
   @media (max-width: 768px) {
-    display: inline-block;
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 4rem;
   }
 `;
 
@@ -124,4 +131,33 @@ export const Image = styled.img`
   @media (max-width: 500px) {
     width: 30px;
   }
+`;
+
+export const TopBar = styled.div`
+  width: 15px;
+  height: 2px;
+  background: ${(props) => props.theme.colors.primary.main};
+  margin-bottom: 4px;
+  transition: transform 0.2s ease;
+  transform: ${({ showMenu }) =>
+    showMenu ? "translateX(1px) rotate(45deg)" : "rotate(0deg)"};
+`;
+export const MiddleBar = styled.div`
+  width: 30px;
+  height: 2px;
+  margin-bottom: 4px;
+  background: ${(props) => props.theme.colors.primary.main};
+  transform: ${({ showMenu }) =>
+    showMenu ? "translateX(0px) rotate(-45deg)" : "rotate(0deg)"};
+  transition: transform 0.2s ease;
+`;
+export const BottomBar = styled.div`
+  width: 15px;
+  height: 2px;
+  background: ${(props) => props.theme.colors.primary.main};
+  transform: ${({ showMenu }) =>
+    showMenu ? "translateX(-2px) rotate(45deg)" : "rotate(0deg)"};
+  float: right;
+  margin-bottom: 4px;
+  transition: transform 0.2s ease;
 `;
