@@ -12,7 +12,7 @@
 // };
 
 const PRIMARY = {
-  lighter:"#a4a4a4",
+  lighter:"#ffffff",
   light:"#7b7c7d",
   main:"#d4bc91",
   dark:"#353537",
@@ -22,6 +22,7 @@ const PRIMARY = {
 
 const BACKGORUND = {
   bg1: "#161619",
+  bg2:"#40403f"
 };
 
 const palatte = {

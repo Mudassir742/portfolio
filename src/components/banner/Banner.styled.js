@@ -126,45 +126,13 @@ export const DeveloperName = styled.h2`
   z-index: 1;
   right: 4rem;
   bottom: -25px;
-  color: #2a323d;
+  color: ${(props) => props.theme.colors.background.bg2};
   letter-spacing: 1px;
   @media (max-width: 768px) {
     display: none;
   }
 `;
-export const Technology = styled.span`
-  font-size: 1.8rem;
-  display: block;
-  color: white;
-  letter-spacing: 2px;
-  margin-bottom: 2rem;
-  @media (max-width: 1030px) {
-    font-size: 1.4rem;
-  }
-  @media (max-width: 530px) {
-    font-size: 1.1rem;
-  }
-`;
 
-export const IntroDetail = styled.span`
-  text-align: left;
-  font-size: 1.1rem;
-  line-height: 1.6rem;
-  max-width: 450px;
-  width: 100%;
-  display: block;
-  color: white;
-  letter-spacing: 1px;
-  @media (max-width: 1030px) {
-    font-size: 1rem;
-  }
-  @media (max-width: 768px) {
-    max-width: 600px;
-  }
-  @media (max-width: 500px) {
-    font-size: 0.9rem;
-  }
-`;
 export const HeroButton = styled.button`
   font-size: 1.2rem;
   width: 150px;
@@ -175,7 +143,6 @@ export const HeroButton = styled.button`
   color: white;
   letter-spacing: 2px;
   font-weight: bold;
-  box-shadow: 0px 5px 10px 0px rgba(0, 189, 149, 0.4);
   background: ${(props) => props.theme.colors.primary.main};
   &:hover {
   }
@@ -205,7 +172,7 @@ export const PhotoContainer = styled.div`
 export const PhotoFrame = styled.div`
   max-width: 280px;
   max-height: 320px;
-  border: 2px solid black;
+  border: 2px solid ${(props) => props.theme.colors.primary.main};
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -219,7 +186,7 @@ export const PhotoFrame = styled.div`
 export const PhotoBackground = styled.div`
   width: 100%;
   height: 100%;
-  background: black;
+  background: ${(props) => props.theme.colors.primary.darker};
   border-radius: 15px;
   position: absolute;
   top: 30px;
