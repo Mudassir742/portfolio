@@ -87,8 +87,8 @@ export const StyledLink = styled.a`
   font-weight: bold;
   color: ${(props) =>
     props.active
-      ? props.theme.colors.primary.light
-      : props.theme.colors.primary.contrastText};
+      ? props.theme.colors.primary.main
+      : props.theme.colors.primary.light};
   text-decoration: none;
   position: relative;
   transition: all 0.7s ease-in-out;
@@ -99,13 +99,13 @@ export const StyledLink = styled.a`
     bottom: 0;
     width: ${(props) => (props.active ? "100%" : "0%")};
     height: 2px;
-    background: ${(props) => props.theme.colors.primary.light};
+    background: ${(props) => props.theme.colors.primary.main};
     transition: all 0.7s ease-in-out;
   }
 
   &:hover {
     cursor: pointer;
-    color: ${(props) => props.theme.colors.primary.light};
+    color: ${(props) => props.theme.colors.primary.main};
   }
   &:hover:before {
     width: 100%;

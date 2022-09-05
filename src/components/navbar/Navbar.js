@@ -30,7 +30,7 @@ const Navbar = () => {
     <NavbarContainer isStickey={isStickey}>
       <Logo>
         <Image src={LogoIcon} alt="logo" />
-        <LogoText>mudassir.</LogoText>
+        {/* <LogoText>mudassir.</LogoText> */}
       </Logo>
       <NavigationWrapper showMenu={showMenu}>
         <LinkContainer showMenu={showMenu}>
