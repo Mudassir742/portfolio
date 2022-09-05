@@ -14,8 +14,6 @@ import {
 import { useTheme } from "styled-components";
 import LogoIcon from "../../asset/icons/logo.png";
 
-//import "./Navbar.css";
-
 const Navbar = () => {
   const theme = useTheme();
   const [isStickey, setIsStickey] = useState(false);

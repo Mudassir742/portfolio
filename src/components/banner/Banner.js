@@ -16,8 +16,6 @@ import {
   QouteCard,
 } from "./Banner.styled";
 
-//import "./Banner.css";
-
 const Banner = () => {
   return (
     <HeroContainer>

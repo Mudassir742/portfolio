@@ -13,7 +13,6 @@ import FrontendImage from "../../asset/icons/frontend.png";
 import BackendImage from "../../asset/icons/backend.png";
 import BugImage from "../../asset/icons/bug.png";
 
-//import "./Services.css";
 const Services = () => {
   return (
     <ServiceSection>
