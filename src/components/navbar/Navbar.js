@@ -9,7 +9,9 @@ import {
   NavigationWrapper,
   StyledLink,
   Image,
-  LogoText,
+  TopBar,
+  MiddleBar,
+  BottomBar,
 } from "./Navbar.styled";
 import { useTheme } from "styled-components";
 import LogoIcon from "../../asset/icons/logo.png";
@@ -30,7 +32,6 @@ const Navbar = () => {
     <NavbarContainer isStickey={isStickey}>
       <Logo>
         <Image src={LogoIcon} alt="logo" />
-        {/* <LogoText>mudassir.</LogoText> */}
       </Logo>
       <NavigationWrapper showMenu={showMenu}>
         <LinkContainer showMenu={showMenu}>
@@ -47,11 +48,14 @@ const Navbar = () => {
       </NavigationWrapper>
 
       <NavIcon onClick={() => setShowMneu(!showMenu)}>
-        {!showMenu ? (
-          <FiMenu size="40px" color={theme.colors.primary.light} />
+        {/* {!showMenu ? (
+          <FiMenu size="40px" color={theme.colors.primary.main} />
         ) : (
-          <GiCrossedBones size="40px" color={theme.colors.primary.light} />
-        )}
+          <GiCrossedBones size="40px" color={theme.colors.primary.main} />
+        )} */}
+        <TopBar showMenu={showMenu}></TopBar>
+        <MiddleBar showMenu={showMenu}></MiddleBar>
+        <BottomBar showMenu={showMenu}></BottomBar>
       </NavIcon>
     </NavbarContainer>
   );

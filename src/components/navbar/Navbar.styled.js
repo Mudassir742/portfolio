@@ -114,8 +114,14 @@ export const StyledLink = styled.a`
 
 export const NavIcon = styled.div`
   display: none;
+  width: 35px;
+  height: 35px;
+  overlfow: hidden;
+  position: relative;
   @media (max-width: 768px) {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 `;
 
@@ -127,5 +133,58 @@ export const Image = styled.img`
   }
   @media (max-width: 500px) {
     width: 30px;
+  }
+`;
+
+export const TopBar = styled.div`
+  position: relative;
+  transition: width 1s ease;
+  transition: transform 0.6s ease;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: ${({ showMenu }) => (showMenu ? "141%" : "50%")};
+    transform: ${({ showMenu }) =>
+      showMenu ? "rotate(45deg)" : "rotate(0deg)"};
+    transform-origin: 0% 0%;
+    height: 2px;
+    background: ${({ theme }) => theme.colors.primary.main};
+    transition: width 1s ease;
+    transition: transform 0.6s ease;
+  }
+`;
+export const MiddleBar = styled.div`
+  transition: width 1s ease;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: ${({ showMenu }) => (showMenu ? "0%" : "100%")};
+    height: 2px;
+    background: ${({ theme }) => theme.colors.primary.main};
+    transition: width 1s ease;
+  }
+`;
+export const BottomBar = styled.div`
+transition: width 1s ease;
+transition: transform 0.6s ease;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: ${({ showMenu }) => (showMenu ? "140%" : "50%")};
+    transform: ${({ showMenu }) =>
+      showMenu ? "rotate(-45deg)" : "rotate(0deg)"};
+    transform-origin: 0% 0%;
+    height: 2px;
+    background: ${({ theme }) => theme.colors.primary.main};
+    transition: width 1s ease;
+    transition: transform 0.6s ease;
   }
 `;
