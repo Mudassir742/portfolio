@@ -1,9 +1,11 @@
-import React from 'react'
+import { TestimonialSection, SectionHeading } from "./Testimonials.styled";
 
 const Testimonials = () => {
   return (
-    <div>Testimonials</div>
-  )
-}
+    <TestimonialSection>
+      <SectionHeading>Testimonials</SectionHeading>
+    </TestimonialSection>
+  );
+};
 
-export default Testimonials
+export default Testimonials;
