@@ -17,3 +17,6 @@ export const SectionHeading = styled.p`
     font-size: 1.8rem;
   }
 `;
+
+export const TestimonialContainer = styled.div`
+`

@@ -4,6 +4,9 @@ const Testimonials = () => {
   return (
     <TestimonialSection>
       <SectionHeading>Testimonials</SectionHeading>
+      <TestimonialSection>
+        
+      </TestimonialSection>
     </TestimonialSection>
   );
 };
