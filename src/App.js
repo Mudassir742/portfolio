@@ -7,6 +7,7 @@ import Banner from "./components/banner/Banner";
 import Services from "./components/services/Services";
 import Technology from "./components/technology/Technology";
 import Project from "./components/projects/Project";
+import Testimonials from "./components/testimonials/Testimonials";
 //theme
 import ThemeProvider from "./theme";
 
@@ -21,6 +22,7 @@ function App() {
         <Services />
         <Technology />
         <Project />
+        <Testimonials />
       </ParallaxProvider>
     </ThemeProvider>
   );
