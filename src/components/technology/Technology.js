@@ -1,12 +1,12 @@
-import React from "react";
+//styles
 import {
   SectionHeading,
   TechContainer,
   TechnologySection,
 } from "./Technology.styled";
-
+//components
 import TechnologyCard from "./TechnologyCard";
-
+//images
 import ReactImage from "../../asset/reactjs.png";
 import NodeImage from "../../asset/nodejs.png";
 import ExpressImage from "../../asset/expressjs.png";
