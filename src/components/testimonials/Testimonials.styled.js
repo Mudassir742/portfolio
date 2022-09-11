@@ -71,7 +71,7 @@ export const RearCard = styled.div`
   height: 100%;
   top: 0;
   position: absolute;
-  background: white;
+  background: #202022;
   border-radius: 6px;
   transform: rotate(-10deg);
   @media (max-width: 930px) {
