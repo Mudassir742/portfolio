@@ -192,6 +192,16 @@ export const PhotoBackground = styled.div`
   position: absolute;
   top: 30px;
   left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+`;
+
+export const ProfilePhoto = styled.img`
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const QouteCard = styled.h5`

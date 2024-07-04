@@ -20,7 +20,9 @@ import {
   PhotoFrame,
   TextContainer,
   Line,
+  ProfilePhoto,
 } from "./Banner.styled";
+import profileImg from "../../asset/Mudassir-01.png"
 
 const Banner = () => {
   return (
@@ -46,7 +48,9 @@ const Banner = () => {
         </IntroSection>
         <PhotoContainer>
           <PhotoFrame>
-            <PhotoBackground></PhotoBackground>
+            <PhotoBackground>
+              <ProfilePhoto src={profileImg} alt="mudassir's profile"/>
+            </PhotoBackground>
           </PhotoFrame>
           {/* <QouteCard className="qoute">
             "make it Simple, make it Right, make it Work."
