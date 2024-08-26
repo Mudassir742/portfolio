@@ -19,8 +19,8 @@ function App() {
         <Navbar />
         <Banner />
         <Services />
-        <Technology />
         <Project />
+        <Technology />
       </ParallaxProvider>
     </ThemeProvider>
   );

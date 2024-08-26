@@ -10,7 +10,7 @@ import {
   ProjectDetail,
 } from "./Projects.styled";
 
-const ProjectCard = ({ projectImage, projectName, projectDetail,reverse }) => {
+const ProjectCard = ({ projectImage, projectName, projectDetail,btnAction,reverse }) => {
   return (
     <ProjectContainer reverse={reverse}>
       <ProjectImageContainer>
@@ -21,10 +21,10 @@ const ProjectCard = ({ projectImage, projectName, projectDetail,reverse }) => {
       <ProjectInfoContainer>
         <ProjectHeading>{projectName}</ProjectHeading>
         <ProjectDetail>{projectDetail}</ProjectDetail>
-        <ProjectButton>View Project</ProjectButton>
+        <ProjectButton onClick={() => btnAction()}>View Project</ProjectButton>
       </ProjectInfoContainer>
     </ProjectContainer>
-  );
+  )
 };
 
 export default ProjectCard;
