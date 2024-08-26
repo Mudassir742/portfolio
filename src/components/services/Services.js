@@ -15,39 +15,36 @@ import BugImage from "../../asset/icons/bug.png";
 
 const Services = () => {
   return (
-    <ServiceSection>
+    <ServiceSection id="services">
       <SectionHeading>My Services</SectionHeading>
       <CardSection>
         <ServiceCard>
           <Image src={FrontendImage} alt="icon" />
           <ServiceHeading>Frontend</ServiceHeading>
           <ServiceDetail>
-            I am very good in replicating designs.I have design many web pages
-            with amaizing design. I will convert your static figma or any type
-            of design to responsive web pages.
+            I create visually appealing and responsive user interfaces. My expertise includes
+            building dynamic applications ensuring smooth user experiences across all devices.
           </ServiceDetail>
         </ServiceCard>
         <ServiceCard>
           <Image src={BackendImage} alt="icon" />
           <ServiceHeading>Backend</ServiceHeading>
           <ServiceDetail>
-            I am very good in replicating designs.I have design many web pages
-            with amaizing design. I will convert your static figma or any type
-            of design to responsive web pages.
+            I design and implement robust server-side applications. My expertise includes developing
+            APIs and managing data to ensure seamless integration and efficient performance.
           </ServiceDetail>
         </ServiceCard>
         <ServiceCard>
           <Image src={BugImage} alt="icon" />
           <ServiceHeading>Bug Fixing</ServiceHeading>
           <ServiceDetail>
-            I am very good in replicating designs.I have design many web pages
-            with amaizing design. I will convert your static figma or any type
-            of design to responsive web pages.
+            I identify and resolve issues to ensure application stability. My expertise includes
+            using debugging tools to maintain high code quality and a smooth user experience.
           </ServiceDetail>
         </ServiceCard>
       </CardSection>
     </ServiceSection>
-  );
+  )
 };
 
 export default Services;

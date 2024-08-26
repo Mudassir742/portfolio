@@ -21,8 +21,8 @@ import PostmanImage from "../../asset/postman.png";
 
 const Technology = () => {
   return (
-    <TechnologySection>
-      <SectionHeading>Technology Stack</SectionHeading>
+    <TechnologySection id="technology">
+      <SectionHeading>Technologies</SectionHeading>
       <TechContainer>
         <TechCard>
           <TechContent>

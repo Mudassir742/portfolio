@@ -24,6 +24,11 @@ const Navbar = () => {
     });
   }, []);
 
+  const handleNavigation = (sectionId) => {
+    setShowMneu(false)
+    window.location.href = sectionId
+  }
+
   return (
     <NavbarContainer isStickey={isStickey}>
       <Logo>
@@ -31,20 +36,20 @@ const Navbar = () => {
       </Logo>
       <NavigationWrapper showMenu={showMenu}>
         <LinkContainer showMenu={showMenu}>
-          <StyledLink href="/" active={true} showMenu={showMenu}>
+          <StyledLink onClick={()=>handleNavigation("#home")} active={true} showMenu={showMenu}>
             Home
           </StyledLink>
 
-          <StyledLink href="/" showMenu={showMenu}>
+          <StyledLink onClick={()=>handleNavigation("#services")} showMenu={showMenu}>
             Services
           </StyledLink>
 
-          <StyledLink href="/" showMenu={showMenu}>
+          <StyledLink onClick={()=>handleNavigation("#projects")} showMenu={showMenu}>
             Projects
           </StyledLink>
 
-          <StyledLink href="/" showMenu={showMenu}>
-            Contact
+          <StyledLink onClick={()=>handleNavigation("#technology")} showMenu={showMenu}>
+            Technology
           </StyledLink>
         </LinkContainer>
       </NavigationWrapper>

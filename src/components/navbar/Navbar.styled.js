@@ -10,7 +10,7 @@ export const NavbarContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: ${(props) => (props.isStickey ? "1.6rem 5rem;" : "2rem 6rem;")}
+    padding: ${(props) => (props.isStickey ? "1.4rem 5rem;" : "2rem 6rem;")}
     transition: top,left,padding.6s;
     z-index: 1000;
     @media (max-width: 768px) {

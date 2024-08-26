@@ -25,31 +25,43 @@ import {
 import profileImg from "../../asset/Mudassir-01.png"
 
 const Banner = () => {
+
+  const handleSendEmail = () => {
+    window.location.href = 'mailto:mudassirwaheed@sensviz.com'
+  }
+
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <ContentSection>
         <IntroSection>
           <SocialLinkContainer>
             <Partition></Partition>
-            <SocialLink>Github</SocialLink>
+            <SocialLink href="https://github.com/Mudassir742" target="_blank">
+              Github
+            </SocialLink>
             <Circle></Circle>
-            <SocialLink>LinkedIn</SocialLink>
+            <SocialLink
+              href="https://www.linkedin.com/in/mudassir-waheed-69b005206/"
+              target="_blank"
+            >
+              LinkedIn
+            </SocialLink>
             <Partition></Partition>
           </SocialLinkContainer>
           <IntroContentSection>
             <Intro>Mudassir Waheed.</Intro>
             <TextContainer>
               <Line></Line>
-              <Typo>MERN DEVELOPER</Typo>
+              <Typo>WEB DEVELOPER</Typo>
             </TextContainer>
             <Slogan>Where imagination meets creativity.</Slogan>
-            <HeroButton>Let's Talk</HeroButton>
+            <HeroButton onClick={()=>handleSendEmail()}>Let's Talk</HeroButton>
           </IntroContentSection>
         </IntroSection>
         <PhotoContainer>
           <PhotoFrame>
             <PhotoBackground>
-              <ProfilePhoto src={profileImg} alt="mudassir's profile"/>
+              <ProfilePhoto src={profileImg} alt="mudassir's profile" />
             </PhotoBackground>
           </PhotoFrame>
           {/* <QouteCard className="qoute">
@@ -59,7 +71,7 @@ const Banner = () => {
       </ContentSection>
       <DeveloperName>Mudassir Waheed.</DeveloperName>
     </HeroContainer>
-  );
+  )
 };
 
 export default Banner;
