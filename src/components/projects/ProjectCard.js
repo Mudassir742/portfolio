@@ -21,7 +21,11 @@ const ProjectCard = ({ projectImage, projectName, projectDetail,btnAction,revers
       <ProjectInfoContainer>
         <ProjectHeading>{projectName}</ProjectHeading>
         <ProjectDetail>{projectDetail}</ProjectDetail>
-        <ProjectButton onClick={() => btnAction()}>View Project</ProjectButton>
+        {btnAction ? (
+          <ProjectButton onClick={() => btnAction()}>View Project</ProjectButton>
+        ) : (
+          <ProjectDetail>Adding Soon!</ProjectDetail>
+        )}
       </ProjectInfoContainer>
     </ProjectContainer>
   )
