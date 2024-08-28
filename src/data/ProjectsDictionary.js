@@ -1,4 +1,7 @@
 import { CryptoImages } from '../asset/project/crypto-wave'
+import { CVJuryImages } from '../asset/project/cv-jury'
+import { DefinePediaImages } from '../asset/project/define-pedia'
+import { GrantMatchImages } from '../asset/project/grant-match'
 import { TripeSaverImages } from '../asset/project/my-trip-saver'
 import { SigneoImages } from '../asset/project/signeo'
 
@@ -39,7 +42,7 @@ export const ProjectsDictionary = {
   'grant-match': {
     title: 'Grant Match',
     link: 'https://grantmatch.ai/',
-    images: TripeSaverImages,
+    images: GrantMatchImages,
     technologies: [
       'React',
       'Redux toolkit',
@@ -63,7 +66,7 @@ export const ProjectsDictionary = {
   'cv-jury': {
     title: 'CV Jury',
     link: 'https://coverletterai.uk/',
-    images: TripeSaverImages,
+    images: CVJuryImages,
     technologies: [
       'React',
       'Redux toolkit',
@@ -90,7 +93,7 @@ export const ProjectsDictionary = {
   'define-pedia': {
     title: 'DefinePedia',
     link: '',
-    images: TripeSaverImages,
+    images: DefinePediaImages,
     technologies: ['Nextjs', 'React', 'Material-UI', 'stripe', 'Express', 'Typescript', 'MongoDB'],
     description: `DefinePedia is a project focusing on Education problems of students and providing them with a clear and best understanding
                   of their study material.I worked with a team of web developers and worked on both frotend and backend.This is the user side module. It consists of two dashboard modules too.`,
