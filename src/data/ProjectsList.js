@@ -39,13 +39,13 @@ export const ProjectsList = [
     description: `Crypto Wave is a platform which provides real time market prices of crypto and it forecasts selected cryptos
                     future prices in a beautiful visualization graphs.`,
   },
-//   {
-//     id: 'emercient',
-//     title: 'Emercient',
-//     cover: ProjectImage5,
-//     description: `Emercient is a project that enables users to easily search through their data using prompts. Users can create Knowledge Bases
-//                     and upload data files in Knowlegde Basis and later search through the data using prompts`,
-//   },
+  {
+    id: 'emercient',
+    title: 'Emercient',
+    cover: ProjectImage5,
+    description: `Emercient is a project that enables users to easily search through their data using prompts. Users can create Knowledge Bases
+                    and upload data files in Knowlegde Basis and later search through the data using prompts`,
+  },
   {
     id: 'my-trip-saver',
     title: 'My Trip Saver',
@@ -54,12 +54,12 @@ export const ProjectsList = [
                     It provides the realtime flight data of more than 10 flight providers. 
                     Users can easily search through and book flights`,
   },
-//   {
-//     id: 'time-pay-jao',
-//     title: 'Time Pay Jao',
-//     cover: ProjectImage7,
-//     description: `Time Pay Jao is a ride booking platform. This is the Manager side of the Time Pay Jao application.`,
-//   },
+  {
+    id: 'time-pay-jao',
+    title: 'Time Pay Jao',
+    cover: ProjectImage7,
+    description: `Time Pay Jao is a ride booking platform. This is the Manager side of the Time Pay Jao application.`,
+  },
   {
     id: 'define-pedia',
     title: 'DefinePedia',

@@ -57,6 +57,7 @@ export const ProjectsDictionary = {
       'stripe',
       'MongoDB',
       'Pinecone',
+      'Docker',
     ],
     description: `GrantMatch is a platform which birngs the most relevant grant opportunities to you,
                     so you can stop your tedious & time consuming search processes for the grants with a free 15 day trial
@@ -87,14 +88,23 @@ export const ProjectsDictionary = {
     title: 'Time Pay Jao',
     link: '',
     images: TripeSaverImages,
-    technologies: ['React', 'Material-UI', ,],
+    technologies: ['React', 'TailwindCSS'],
     description: `Time Pay Jao is a ride booking platform. This is the Manager side of the Time Pay Jao application.I created the frontend in reactjs and material ui.`,
   },
   'define-pedia': {
     title: 'DefinePedia',
     link: '',
     images: DefinePediaImages,
-    technologies: ['Nextjs', 'React', 'Material-UI', 'stripe', 'Express', 'Typescript', 'MongoDB'],
+    technologies: [
+      'Nextjs',
+      'React',
+      'Material-UI',
+      'stripe',
+      'Express',
+      'Typescript',
+      'MongoDB',
+      'Docker',
+    ],
     description: `DefinePedia is a project focusing on Education problems of students and providing them with a clear and best understanding
                   of their study material.I worked with a team of web developers and worked on both frotend and backend.This is the user side module. It consists of two dashboard modules too.`,
   },
@@ -110,6 +120,7 @@ export const ProjectsDictionary = {
       'Azure Active Directory',
       'Azure Blob Storage',
       'CosmosDB',
+      'Docker',
     ],
     description: `Emercient is a project that enables users to easily search through their data using prompts. Users can create Knowledge Bases
                     and upload data files in Knowlegde Basis and later search through the data using prompts.`,

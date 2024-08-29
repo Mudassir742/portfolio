@@ -13,6 +13,9 @@ const Projects = () => {
     <ProjectSection id="projects">
       <SectionHeading>Projects</SectionHeading>
       {ProjectsList.map(({ id, title, cover, description }, index) => {
+        const btnAction =
+          id === 'time-pay-jao' || id === 'emercient' ? null : () => navigate(`/${id}`)
+
         return (
           <ProjectCard
             key={id}
@@ -20,7 +23,7 @@ const Projects = () => {
             projectImage={cover}
             projectDetail={description}
             reverse={index % 2 !== 0}
-            btnAction={() => navigate(`/${id}`)}
+            btnAction={btnAction}
           />
         )
       })}

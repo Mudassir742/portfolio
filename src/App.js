@@ -11,6 +11,7 @@ import Project from './views/Project/Project'
 import ThemeProvider from './theme'
 
 import './App.css'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/:projectId" element={<Project/>} />
           </Routes>
+          <Footer/>
         </BrowserRouter>
       </ParallaxProvider>
     </ThemeProvider>
