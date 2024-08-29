@@ -1,29 +1,32 @@
 //react
-import React from "react";
-import { ParallaxProvider } from "react-scroll-parallax";
-//components
-import Navbar from "./components/navbar/Navbar";
-import Banner from "./components/banner/Banner";
-import Services from "./components/services/Services";
-import Technology from "./components/technology/Technology";
-import Project from "./components/projects/Project";
-//theme
-import ThemeProvider from "./theme";
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { ParallaxProvider } from 'react-scroll-parallax'
 
-import "./App.css";
+//viwes
+import Home from './views/Home/Home'
+import Project from './views/Project/Project'
+
+//theme
+import ThemeProvider from './theme'
+
+import './App.css'
+import Footer from './components/footer/Footer'
 
 function App() {
   return (
     <ThemeProvider>
       <ParallaxProvider>
-        <Navbar />
-        <Banner />
-        <Services />
-        <Project />
-        <Technology />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/:projectId" element={<Project/>} />
+          </Routes>
+          <Footer/>
+        </BrowserRouter>
       </ParallaxProvider>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App
