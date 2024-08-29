@@ -1,6 +1,7 @@
 import antdLogo from './Ant Design.png'
 import awsLogo from './AWS.png'
 import bootstrapLogo from './Bootstrap.png'
+import bitbucketLogo from './BitBucket.png'
 import cssLogo from './CSS3.png'
 import digitalOceanLogo from './Digital Ocean.png'
 import djangoRestLogo from './Django REST.png'
@@ -12,7 +13,7 @@ import githubLogo from './GitHub.png'
 import htmlLogo from './HTML5.png'
 import javascriptLogo from './JavaScript.png'
 import jenkinsLogo from './Jenkins.png'
-//import jestLogo from './Jest.png'
+import jestLogo from './Jest.png'
 import materialUILogo from './Material UI.png'
 import mongoDBLogo from './MongoDB.png'
 import mySqlLogo from './MySQL.png'
@@ -37,10 +38,8 @@ export const skillsLogos = [
   { logo: bootstrapLogo, title: 'Bootstrap' },
   { logo: cssLogo, title: 'CSS3' },
   { logo: htmlLogo, title: 'HTML5' },
-  { logo: javascriptLogo, title: 'JavaScript' },
   { logo: materialUILogo, title: 'Material UI' },
   { logo: tailwindLogo, title: 'Tailwind CSS' },
-  { logo: typescriptLogo, title: 'TypeScript' },
 
   // Languages
   { logo: javascriptLogo, title: 'JavaScript' },
@@ -49,11 +48,9 @@ export const skillsLogos = [
 
   // Backend Technologies
   { logo: djangoRestLogo, title: 'Django REST' },
-  { logo: dockerLogo, title: 'Docker' },
   { logo: fastApiLogo, title: 'FastAPI' },
   { logo: flaskLogo, title: 'Flask' },
   { logo: nodeLogo, title: 'Node.js' },
-  { logo: nginxLogo, title: 'NGINX' },
 
   // Database Related
   { logo: firebaseLogo, title: 'Firebase' },
@@ -65,10 +62,13 @@ export const skillsLogos = [
   { logo: digitalOceanLogo, title: 'Digital Ocean' },
   { logo: vercelLogo, title: 'Vercel' },
   { logo: jenkinsLogo, title: 'Jenkins' },
+  { logo: dockerLogo, title: 'Docker' },
+  { logo: nginxLogo, title: 'NGINX' },
 
   // Version Control
   { logo: githubLogo, title: 'GitHub' },
+  { logo: bitbucketLogo, title: 'BitBucket' },
   { logo: postmanLogo, title: 'Postman' },
   { logo: swaggerLogo, title: 'Swagger' },
-  //{ logo: jestLogo, title: 'Jest' },
+  { logo: jestLogo, title: 'Jest' },
 ]
