@@ -18,7 +18,7 @@ const Services = () => {
     <ServiceSection id="services">
       <SectionHeading>My Services</SectionHeading>
       <CardSection>
-        <ServiceCard>
+        <ServiceCard data-aos="fade-up" data-aos-duration="1200">
           <Image src={FrontendImage} alt="icon" />
           <ServiceHeading>Frontend</ServiceHeading>
           <ServiceDetail>
@@ -26,7 +26,7 @@ const Services = () => {
             building dynamic applications ensuring smooth user experiences across all devices.
           </ServiceDetail>
         </ServiceCard>
-        <ServiceCard>
+        <ServiceCard data-aos="fade-up" data-aos-duration="1300">
           <Image src={BackendImage} alt="icon" />
           <ServiceHeading>Backend</ServiceHeading>
           <ServiceDetail>
@@ -34,7 +34,7 @@ const Services = () => {
             APIs and managing data to ensure seamless integration and efficient performance.
           </ServiceDetail>
         </ServiceCard>
-        <ServiceCard>
+        <ServiceCard data-aos="fade-up" data-aos-duration="1400">
           <Image src={BugImage} alt="icon" />
           <ServiceHeading>Bug Fixing</ServiceHeading>
           <ServiceDetail>

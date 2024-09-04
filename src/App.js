@@ -1,5 +1,5 @@
 //react
-import React from 'react'
+import React,{useEffect} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ParallaxProvider } from 'react-scroll-parallax'
 
@@ -13,7 +13,15 @@ import ThemeProvider from './theme'
 import './App.css'
 import Footer from './components/footer/Footer'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function App() {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <ThemeProvider>
       <ParallaxProvider>
