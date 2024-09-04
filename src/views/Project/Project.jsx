@@ -32,14 +32,14 @@ const Project = () => {
     <>
       {projectDetail && (
         <PageContainer>
-          <MainHeadingContainer>
+          <MainHeadingContainer data-aos="fade-up">
             <MainHeading>{projectDetail.title}</MainHeading>
           </MainHeadingContainer>
 
           <ContentContainer>
-            <ContentDescription>{projectDetail.description}</ContentDescription>
+            <ContentDescription data-aos="fade-up" data-aos-duration={1100}>{projectDetail.description}</ContentDescription>
 
-            <TechStackContainer>
+            <TechStackContainer data-aos="fade-up" data-aos-duration={1200}>
               <SubHeading>Technology</SubHeading>
               <TechStacks>
                 {projectDetail.technologies.map((technology) => (
@@ -57,7 +57,7 @@ const Project = () => {
 
           <ImageContainer>
             {projectDetail.images.map((image, index) => (
-              <Image key={index} src={image} alt="crypto" />
+              <Image key={index} src={image} alt="crypto" data-aos="fade-up" data-aos-duration={1300}/>
             ))}
           </ImageContainer>
         </PageContainer>

@@ -18,7 +18,7 @@ const Technology = () => {
       <SectionHeading>Technologies</SectionHeading>
       <TechContainer>
         {skillsLogos.map(({ logo, title }) => (
-          <TechCard key={title}>
+          <TechCard key={title} data-aos="fade-down">
             <TechContent>
               <Image src={logo} alt={title} />
               <TechHeading>{title}</TechHeading>

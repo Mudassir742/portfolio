@@ -33,7 +33,7 @@ const Banner = () => {
   return (
     <HeroContainer id="home">
       <ContentSection>
-        <IntroSection>
+        <IntroSection data-aos="fade-right" data-aos-duration="1400">
           <SocialLinkContainer>
             <Partition></Partition>
             <SocialLink href="https://github.com/Mudassir742" target="_blank">
@@ -57,8 +57,8 @@ const Banner = () => {
             <Slogan>Where imagination meets creativity.</Slogan>
             <HeroButton onClick={()=>handleSendEmail()}>Let's Talk</HeroButton>
           </IntroContentSection>
-        </IntroSection>
-        <PhotoContainer>
+        </IntroSection> 
+        <PhotoContainer data-aos="fade-left" data-aos-duration="1500">
           <PhotoFrame>
             <PhotoBackground>
               <ProfilePhoto src={profileImg} alt="mudassir's profile" />
