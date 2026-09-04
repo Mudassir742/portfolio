@@ -68,16 +68,14 @@ export const SectionSubtext = styled.p`
 
 export const ContactGrid = styled.div`
   position: relative;
-  max-width: 900px;
+  max-width: 620px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.4rem;
-  @media (max-width: 700px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: 430px) {
+  @media (max-width: 560px) {
     grid-template-columns: 1fr;
+    max-width: 320px;
   }
 `;
 
@@ -86,8 +84,8 @@ export const ContactCard = styled.a`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 0.9rem;
-  padding: 2rem 1.4rem;
+  gap: 1rem;
+  padding: 2.2rem 1.4rem;
   border-radius: 14px;
   text-decoration: none;
   background: ${({ theme }) => theme.colors.primary.dark};
@@ -113,17 +111,10 @@ export const IconWrap = styled.div`
 `;
 
 export const ContactLabel = styled.span`
-  font-size: 0.78rem;
-  color: ${({ theme }) => theme.colors.primary.light};
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-`;
-
-export const ContactValue = styled.span`
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-weight: 600;
   color: ${({ theme }) => theme.colors.primary.lighter};
-  word-break: break-word;
+  letter-spacing: 0.2px;
 `;
 
 export const CTAWrap = styled.div`

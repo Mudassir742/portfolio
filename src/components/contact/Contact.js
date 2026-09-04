@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEnvelope, FaLinkedin, FaGithub, FaLocationDot } from "react-icons/fa6";
+import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa6";
 import {
   ContactSection,
   Kicker,
@@ -9,7 +9,6 @@ import {
   ContactCard,
   IconWrap,
   ContactLabel,
-  ContactValue,
   CTAWrap,
   CTAButton,
 } from "./Contact.styled";
@@ -20,19 +19,16 @@ const contactLinks = [
   {
     icon: <FaEnvelope />,
     label: "Email",
-    value: EMAIL,
     href: `mailto:${EMAIL}`,
   },
   {
     icon: <FaLinkedin />,
     label: "LinkedIn",
-    value: "mudassir-waheed",
     href: "https://www.linkedin.com/in/mudassir-waheed-69b005206/",
   },
   {
     icon: <FaGithub />,
     label: "GitHub",
-    value: "Mudassir742",
     href: "https://github.com/Mudassir742",
   },
 ];
@@ -48,7 +44,7 @@ const Contact = () => {
       </SectionSubtext>
 
       <ContactGrid>
-        {contactLinks.map(({ icon, label, value, href }, index) => (
+        {contactLinks.map(({ icon, label, href }, index) => (
           <ContactCard
             key={label}
             href={href}
@@ -59,20 +55,8 @@ const Contact = () => {
           >
             <IconWrap>{icon}</IconWrap>
             <ContactLabel>{label}</ContactLabel>
-            <ContactValue>{value}</ContactValue>
           </ContactCard>
         ))}
-        <ContactCard
-          as="div"
-          data-aos="fade-up"
-          data-aos-duration="1360"
-        >
-          <IconWrap>
-            <FaLocationDot />
-          </IconWrap>
-          <ContactLabel>Based In</ContactLabel>
-          <ContactValue>Lahore, Pakistan</ContactValue>
-        </ContactCard>
       </ContactGrid>
 
       <CTAWrap data-aos="fade-up">
