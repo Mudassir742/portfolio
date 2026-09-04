@@ -12,59 +12,57 @@ export const ProjectsList = [
     id: 'grant-match',
     title: 'Grant Match',
     cover: ProjectImage1,
-    description: `GrantMatch is a platform which birngs the most relevant grant opportunities to you,
-                    so you can stop your tedious & time consuming search processes for the grants with a free 15 day trial
-                    without the need of a credit/debit card.`,
+    description: `GrantMatch surfaces the most relevant grant opportunities for nonprofits and businesses,
+                    replacing tedious manual searches with a matched, filterable feed — free for the first
+                    15 days, no card required.`,
   },
   {
     id: 'cv-jury',
     title: 'CV Jury',
     cover: ProjectImage2,
-    description: `CVJury AI Cover Letter Writer A powerful tool helping you create compelling
-                    cover letters by suggesting content and language based on industry-specific
-                    best practices`,
+    description: `CV Jury is an AI-powered cover letter writer that suggests content and language tailored
+                    to each industry, helping job seekers ship stronger applications faster.`,
   },
   {
     id: 'signeo',
     title: 'Signeo',
     cover: ProjectImage3,
-    description: `Signeo is a tool which forecasts sales data for a paint company using historical data analysis
-                     and does visualizations on graphs to provide insights into future sales trends, helping the company
-                     make data-driven and strategies.`,
+    description: `Signeo forecasts sales for a paint manufacturer using historical data analysis, turning
+                    the results into interactive visualizations that support data-driven planning.`,
   },
   {
     id: 'crypto-wave',
     title: 'Crypto Wave',
     cover: ProjectImage4,
-    description: `Crypto Wave is a platform which provides real time market prices of crypto and it forecasts selected cryptos
-                    future prices in a beautiful visualization graphs.`,
+    description: `Crypto Wave tracks real-time market prices for major cryptocurrencies and forecasts
+                    future price movement, presented through clean, interactive charts.`,
   },
   {
     id: 'emercient',
     title: 'Emercient',
     cover: ProjectImage5,
-    description: `Emercient is a project that enables users to easily search through their data using prompts. Users can create Knowledge Bases
-                    and upload data files in Knowlegde Basis and later search through the data using prompts`,
+    description: `Emercient lets teams build Knowledge Bases from their own files and search across that
+                    data conversationally using natural-language prompts.`,
   },
   {
     id: 'my-trip-saver',
     title: 'My Trip Saver',
     cover: ProjectImage6,
-    description: `My Trip Saver is a flight booking application for Indian airlines. 
-                    It provides the realtime flight data of more than 10 flight providers. 
-                    Users can easily search through and book flights`,
+    description: `My Trip Saver is a flight-booking application for Indian airlines, aggregating real-time
+                    data from 10+ flight providers so users can search and book in one place.`,
   },
   {
     id: 'time-pay-jao',
     title: 'Time Pay Jao',
     cover: ProjectImage7,
-    description: `Time Pay Jao is a ride booking platform. This is the Manager side of the Time Pay Jao application.`,
+    description: `Time Pay Jao is a ride-booking platform. This is the manager-side console used to
+                    oversee drivers, rides and payouts.`,
   },
   {
     id: 'define-pedia',
     title: 'DefinePedia',
     cover: ProjectImage8,
-    description: `DefinePedia is a project focusing on Education problems of students and providing them with a clear and best understanding
-                    of their study material.`,
+    description: `DefinePedia helps students grasp their study material with clarity — organizing content
+                    into a focused, easy-to-navigate learning experience.`,
   },
 ]

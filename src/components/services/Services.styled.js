@@ -2,40 +2,52 @@ import styled from "styled-components";
 
 export const ServiceSection = styled.section`
   width: 100vw;
-  padding: 2rem 5rem 5rem 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   max-width: 100%;
-  background: ${({ theme }) => theme.colors.primary.darker};
+  background: ${({ theme }) => theme.colors.primary.dark};
   @media (max-width: 768px) {
-    padding: 2rem 3rem;
+    padding: 5rem 3rem;
   }
+`;
+
+export const Kicker = styled.p`
+  text-align: center;
+  color: ${({ theme }) => theme.colors.primary.main};
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
 `;
 
 export const SectionHeading = styled.p`
   width: 100%;
   text-align: center;
-  margin: 2rem 0 4rem 0;
-  font-size: 3rem;
+  margin: 0 0 4rem 0;
+  font-size: 2.6rem;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.primary.lighter};
-  letter-spacing: 1px;
-  @media (max-width: 872px) {
-    font-size: 2.5rem;
-    margin-top: 1.5rem;
-  }
+  letter-spacing: -0.5px;
   @media (max-width: 768px) {
     font-size: 2rem;
+    margin-bottom: 3rem;
   }
 `;
 
 export const CardSection = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  align-items: stretch;
+  max-width: 1100px;
+  margin: 0 auto;
+  grid-gap: 32px;
   @media (max-width: 930px) {
-    grid-gap: 30px;
+    grid-gap: 24px;
   }
   @media (max-width: 860px) {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 45px;
+    grid-gap: 24px;
+    max-width: 420px;
   }
 `;
 
@@ -43,64 +55,72 @@ export const ServiceCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: ${({ theme }) => theme.colors.primary.dark};
+  height: 100%;
+  background: ${({ theme }) => theme.colors.primary.darker};
+  border: 1px solid ${({ theme }) => theme.colors.background.bg2};
   color: ${({ theme }) => theme.colors.primary.lighter};
-  padding: 1.5rem 2rem;
-  border-radius: 6px;
-  border-bottom: 5px solid ${({ theme }) => theme.colors.primary.main};
-  transition: transform 0.4s ease;
+  padding: 2.4rem 2rem;
+  border-radius: 12px;
+  border-bottom: 3px solid ${({ theme }) => theme.colors.primary.main};
+  transition: transform 0.3s ease, border-color 0.3s ease;
   position: relative;
-  &:hover:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: -10px;
-    z-index: -1;
-    transform: scale(0.9);
-    box-shadow: 0px 0px 8px 2px #000000;
-    transition: transform 0.3s ease-out;
-  }
   &:hover {
     cursor: pointer;
-    transform: translateY(-10px);
-  }
-  @media (max-width: 860px) {
-    padding: 1.8rem 2.5rem;
+    transform: translateY(-8px);
+    border-color: ${({ theme }) => theme.colors.primary.main};
   }
   @media (max-width: 600px) {
-    padding: 1.6rem 2.2rem;
-  }
-  @media (max-width: 390px) {
-    padding: 1.4rem 1.8rem;
+    padding: 2rem 1.6rem;
   }
 `;
 
-export const Image = styled.img`
-  width: 70px;
-  height: auto;
-  @media (max-width: 900px) {
-    width: 50px;
-  }
-  @media (max-width: 860px) {
-    width: 75px;
-  }
+export const IconWrap = styled.div`
+  width: 68px;
+  height: 68px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(124, 108, 246, 0.12);
+  margin-bottom: 1.6rem;
+`;
+
+export const Icon = styled.div`
+  width: 34px;
+  height: 34px;
+  background: ${({ theme }) => theme.colors.primary.main};
+  -webkit-mask-image: url(${(props) => props.$src});
+  mask-image: url(${(props) => props.$src});
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 `;
 
 export const ServiceHeading = styled.p`
-  font-size: 1.5rem;
-  margin: 1.5rem 0 0.5rem 0;
-  font-weight: 500;
-  letter-spacing: 1px;
+  width: 100%;
+  min-height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin: 0 0 0.9rem 0;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-align: center;
   color: ${({ theme }) => theme.colors.primary.lighter};
   @media (max-width: 860px) {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
   }
 `;
 export const ServiceDetail = styled.p`
   text-align: center;
-  margin: 1rem 0;
-  line-height: 1.5rem;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
-  color: ${({ theme }) => theme.colors.primary.lighter};
+  margin: 0;
+  line-height: 1.6rem;
+  letter-spacing: 0.2px;
+  font-size: 0.92rem;
+  color: ${({ theme }) => theme.colors.primary.light};
 `;

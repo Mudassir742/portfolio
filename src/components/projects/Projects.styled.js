@@ -2,21 +2,32 @@ import styled from "styled-components";
 
 //main component styles
 export const ProjectSection = styled.section`
-  margin: 6rem 0;
+  padding: 6rem 0;
   width: 100vw;
   max-width: 100%;
+  background: ${({ theme }) => theme.colors.primary.darker};
+`;
+
+export const Kicker = styled.p`
+  text-align: center;
+  color: ${({ theme }) => theme.colors.primary.main};
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
 `;
 
 export const SectionHeading = styled.p`
   width: 100%;
   text-align: center;
-  margin: 2rem 0 4rem 0;
-  font-size: 3rem;
+  margin: 0 0 4rem 0;
+  font-size: 2.6rem;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.primary.lighter};
-  letter-spacing: 1px;
+  letter-spacing: -0.5px;
   @media (max-width: 872px) {
-    font-size: 2.2rem;
-    margin-top: 1.5rem;
+    font-size: 2.1rem;
   }
   @media (max-width: 768px) {
     font-size: 1.8rem;
@@ -90,7 +101,8 @@ export const ProjectButton = styled.button`
   transition: all 0.3s ease;
   background: ${(props) => props.theme.colors.primary.main};
   &:hover {
-    box-shadow: 0px 2px 5px 0px rgba(212, 188, 145, 0.5);
+    box-shadow: 0px 8px 20px 0px rgba(124, 108, 246, 0.4);
+    transform: translateY(-2px);
   }
   @media (max-width: 970px) {
     font-size: 1rem;

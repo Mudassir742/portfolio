@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 import ProjectCard from './ProjectCard'
 
-import { ProjectSection, SectionHeading } from './Projects.styled'
+import { ProjectSection, Kicker, SectionHeading } from './Projects.styled'
 
 import { ProjectsList } from '../../data/ProjectsList'
 
@@ -11,7 +11,8 @@ const Projects = () => {
   const navigate = useNavigate()
   return (
     <ProjectSection id="projects">
-      <SectionHeading>Projects</SectionHeading>
+      <Kicker data-aos="fade-up">Selected Work</Kicker>
+      <SectionHeading data-aos="fade-up">Projects</SectionHeading>
       {ProjectsList.map(({ id, title, cover, description }, index) => {
         const btnAction =
           id === 'time-pay-jao' || id === 'emercient' ? null : () => navigate(`/${id}`)

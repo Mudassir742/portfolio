@@ -29,8 +29,8 @@ import tailwindLogo from './Tailwind CSS.png'
 import typescriptLogo from './TypeScript.png'
 import vercelLogo from './Vercel.png'
 
+// Flat list retained for anything that still wants every logo at once.
 export const skillsLogos = [
-  // Frontend Technologies
   { logo: reactLogo, title: 'React' },
   { logo: reduxLogo, title: 'Redux' },
   { logo: nextLogo, title: 'Next.js' },
@@ -40,35 +40,90 @@ export const skillsLogos = [
   { logo: htmlLogo, title: 'HTML5' },
   { logo: materialUILogo, title: 'Material UI' },
   { logo: tailwindLogo, title: 'Tailwind CSS' },
-
-  // Languages
   { logo: javascriptLogo, title: 'JavaScript' },
   { logo: pythonLogo, title: 'Python' },
   { logo: typescriptLogo, title: 'TypeScript' },
-
-  // Backend Technologies
   { logo: djangoRestLogo, title: 'Django REST' },
   { logo: fastApiLogo, title: 'FastAPI' },
   { logo: flaskLogo, title: 'Flask' },
   { logo: nodeLogo, title: 'Node.js' },
-
-  // Database Related
   { logo: firebaseLogo, title: 'Firebase' },
   { logo: mongoDBLogo, title: 'MongoDB' },
   { logo: mySqlLogo, title: 'MySQL' },
-
-  // Deployment Related
   { logo: awsLogo, title: 'AWS' },
   { logo: digitalOceanLogo, title: 'Digital Ocean' },
   { logo: vercelLogo, title: 'Vercel' },
   { logo: jenkinsLogo, title: 'Jenkins' },
   { logo: dockerLogo, title: 'Docker' },
   { logo: nginxLogo, title: 'NGINX' },
-
-  // Version Control
   { logo: githubLogo, title: 'GitHub' },
   { logo: bitbucketLogo, title: 'BitBucket' },
   { logo: postmanLogo, title: 'Postman' },
   { logo: swaggerLogo, title: 'Swagger' },
   { logo: jestLogo, title: 'Jest' },
+]
+
+// Grouped by category (mirrors the Skills section of the résumé) so the
+// Technology component can render labeled groups instead of one flat grid.
+export const skillsByCategory = [
+  {
+    category: 'Languages',
+    skills: [
+      { logo: typescriptLogo, title: 'TypeScript' },
+      { logo: javascriptLogo, title: 'JavaScript' },
+      { logo: pythonLogo, title: 'Python' },
+    ],
+  },
+  {
+    category: 'Frontend',
+    skills: [
+      { logo: reactLogo, title: 'React' },
+      { logo: nextLogo, title: 'Next.js' },
+      { logo: reduxLogo, title: 'Redux' },
+      { logo: tailwindLogo, title: 'Tailwind CSS' },
+      { logo: materialUILogo, title: 'Material UI' },
+      { logo: antdLogo, title: 'Ant Design' },
+      { logo: bootstrapLogo, title: 'Bootstrap' },
+      { logo: htmlLogo, title: 'HTML5' },
+      { logo: cssLogo, title: 'CSS3' },
+    ],
+  },
+  {
+    category: 'Backend',
+    skills: [
+      { logo: nodeLogo, title: 'Node.js' },
+      { logo: fastApiLogo, title: 'FastAPI' },
+      { logo: flaskLogo, title: 'Flask' },
+      { logo: djangoRestLogo, title: 'Django REST' },
+    ],
+  },
+  {
+    category: 'Data & Messaging',
+    skills: [
+      { logo: mongoDBLogo, title: 'MongoDB' },
+      { logo: mySqlLogo, title: 'MySQL' },
+      { logo: firebaseLogo, title: 'Firebase' },
+    ],
+  },
+  {
+    category: 'DevOps & Cloud',
+    skills: [
+      { logo: dockerLogo, title: 'Docker' },
+      { logo: awsLogo, title: 'AWS' },
+      { logo: digitalOceanLogo, title: 'Digital Ocean' },
+      { logo: vercelLogo, title: 'Vercel' },
+      { logo: jenkinsLogo, title: 'Jenkins' },
+      { logo: nginxLogo, title: 'NGINX' },
+    ],
+  },
+  {
+    category: 'Testing & Tools',
+    skills: [
+      { logo: jestLogo, title: 'Jest' },
+      { logo: swaggerLogo, title: 'Swagger' },
+      { logo: postmanLogo, title: 'Postman' },
+      { logo: githubLogo, title: 'GitHub' },
+      { logo: bitbucketLogo, title: 'BitBucket' },
+    ],
+  },
 ]

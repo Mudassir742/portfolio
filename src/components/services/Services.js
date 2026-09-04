@@ -1,7 +1,9 @@
 import React from "react";
 import {
   CardSection,
-  Image,
+  Icon,
+  IconWrap,
+  Kicker,
   SectionHeading,
   ServiceCard,
   ServiceDetail,
@@ -16,30 +18,37 @@ import BugImage from "../../asset/icons/bug.png";
 const Services = () => {
   return (
     <ServiceSection id="services">
-      <SectionHeading>My Services</SectionHeading>
+      <Kicker data-aos="fade-up">Services</Kicker>
+      <SectionHeading data-aos="fade-up">What I Do</SectionHeading>
       <CardSection>
         <ServiceCard data-aos="fade-up" data-aos-duration="1200">
-          <Image src={FrontendImage} alt="icon" />
-          <ServiceHeading>Frontend</ServiceHeading>
+          <IconWrap>
+            <Icon $src={FrontendImage} />
+          </IconWrap>
+          <ServiceHeading>Frontend Development</ServiceHeading>
           <ServiceDetail>
-            I create visually appealing and responsive user interfaces. My expertise includes
-            building dynamic applications ensuring smooth user experiences across all devices.
+            I build responsive, accessible interfaces with React, Next.js and TypeScript —
+            from design-system components to data-heavy dashboards that stay fast at scale.
           </ServiceDetail>
         </ServiceCard>
         <ServiceCard data-aos="fade-up" data-aos-duration="1300">
-          <Image src={BackendImage} alt="icon" />
-          <ServiceHeading>Backend</ServiceHeading>
+          <IconWrap>
+            <Icon $src={BackendImage} />
+          </IconWrap>
+          <ServiceHeading>Backend & Architecture</ServiceHeading>
           <ServiceDetail>
-            I design and implement robust server-side applications. My expertise includes developing
-            APIs and managing data to ensure seamless integration and efficient performance.
+            I design REST APIs and event-driven microservices with Node.js, Python (FastAPI/Django)
+            and RabbitMQ, backed by well-modeled MongoDB/SQL data layers built to scale.
           </ServiceDetail>
         </ServiceCard>
         <ServiceCard data-aos="fade-up" data-aos-duration="1400">
-          <Image src={BugImage} alt="icon" />
-          <ServiceHeading>Bug Fixing</ServiceHeading>
+          <IconWrap>
+            <Icon $src={BugImage} />
+          </IconWrap>
+          <ServiceHeading>Testing & DevOps</ServiceHeading>
           <ServiceDetail>
-            I identify and resolve issues to ensure application stability. My expertise includes
-            using debugging tools to maintain high code quality and a smooth user experience.
+            I write Jest test suites, document APIs with Swagger, and ship via Docker and
+            GitHub Actions CI/CD pipelines to AWS, DigitalOcean and Oracle Cloud.
           </ServiceDetail>
         </ServiceCard>
       </CardSection>

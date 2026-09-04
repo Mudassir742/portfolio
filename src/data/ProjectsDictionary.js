@@ -10,34 +10,34 @@ export const ProjectsDictionary = {
     title: 'Crypto Wave',
     link: '',
     images: CryptoImages,
-    technologies: ['Reactjs', 'BootStrap', 'Python', 'FAST-API', 'MongoDB'],
+    technologies: ['React', 'Bootstrap', 'Python', 'FastAPI', 'MongoDB'],
     description: `Crypto Wave is a cryptocurrency tracking tool that displays live data for well-known
                     cryptocurrencies and enables real-time price comparisons through interactive graphs. It
-                    also includes a forecasting feature, predicting future price trends. The frontend is built
-                    with React and Bootstrap, while the backend is powered by Python FastAPI with MongoDB for
-                    data storage. Using machine learning models developed by fellow developer, I integrated
-                    APIs to support the live data feed and forecasting functionality.`,
+                    also includes a forecasting feature that predicts future price trends. The frontend is
+                    built with React and Bootstrap, while the backend runs on Python FastAPI with MongoDB
+                    for data storage. I integrated the APIs powering the live data feed and forecasting
+                    functionality, working from ML models built by a fellow engineer on the team.`,
   },
   signeo: {
     title: 'Signeo',
     link: '',
     images: SigneoImages,
-    technologies: ['Reactjs', 'Material-UI', 'Python', 'FAST-API'],
-    description: `Signeo is a data-driven sales forecasting platform designed for the paint industry.
-                  Built using React for the frontend and FastAPI for the backend, it provides real-time
-                  visualizations and predictions of sales data. The system features interactive graphs 
-                  that help users track sales trends and make informed decisions. Its models were developed
-                  by fellow Ai team member which i utilize in the fast api.`,
+    technologies: ['React', 'Material UI', 'Python', 'FastAPI'],
+    description: `Signeo is a data-driven sales forecasting platform built for the paint industry. Using
+                  React on the frontend and FastAPI on the backend, it delivers real-time visualizations
+                  and predictions of sales data so the business can track trends and plan ahead. I built
+                  the platform end to end, integrating forecasting models developed by the AI team into
+                  the FastAPI service.`,
   },
   'my-trip-saver': {
     title: 'My Trip Saver',
     link: '',
     images: TripeSaverImages,
-    technologies: ['Reactjs', 'Redux', 'Ant-Design', 'Java', 'Sql'],
-    description: `My Trip Saver is a flight booking application for Indian airlines. 
-                  It provides the realtime flight data of more than 10 flight providers. 
-                  Users can easily search through and book flights.Its frontend was built in Reactjs and backend in java. 
-                  I only worked on the frontend whereas its backend was developed by a fellow developer`,
+    technologies: ['React', 'Redux', 'Ant Design', 'Java', 'SQL'],
+    description: `My Trip Saver is a flight-booking application for Indian airlines, aggregating
+                  real-time data from 10+ flight providers so users can search and book flights in one
+                  place. The frontend was built in React and the backend in Java. I owned the frontend,
+                  working alongside a backend engineer on the API integration.`,
   },
   'grant-match': {
     title: 'Grant Match',
@@ -45,24 +45,25 @@ export const ProjectsDictionary = {
     images: GrantMatchImages,
     technologies: [
       'React',
-      'Redux toolkit',
-      'Material-UI',
-      'Node',
+      'Redux Toolkit',
+      'Material UI',
+      'Node.js',
       'Express',
       'Swagger',
       'Jest',
-      'Typesrcipt',
+      'TypeScript',
       'Python',
-      'Fast-API',
-      'stripe',
+      'FastAPI',
+      'Stripe',
       'MongoDB',
       'Pinecone',
       'Docker',
     ],
-    description: `GrantMatch is a platform which birngs the most relevant grant opportunities to you,
-                    so you can stop your tedious & time consuming search processes for the grants with a free 15 day trial
-                    without the need of a credit/debit card.I worked along side a team of developers under the supervision of an expereinced Team Lead.Wokring on both the frontend and backends.
-                    `,
+    description: `GrantMatch surfaces the most relevant grant opportunities for its users, replacing
+                    slow, manual searches with a matched, filterable feed — with a free 15-day trial and
+                    no card required. I worked alongside a team of developers under an experienced team
+                    lead, contributing across both the frontend and backend, including the Stripe
+                    subscription flow and the FastAPI-based matching service.`,
   },
   'cv-jury': {
     title: 'CV Jury',
@@ -70,59 +71,62 @@ export const ProjectsDictionary = {
     images: CVJuryImages,
     technologies: [
       'React',
-      'Redux toolkit',
-      'Material-UI',
+      'Redux Toolkit',
+      'Material UI',
       'Python',
-      'Fast-API',
+      'FastAPI',
       'Docker',
       'Digital Ocean',
-      'openai-api',
+      'OpenAI API',
     ],
-    description: `CVJury AI Cover Letter Writer A powerful tool helping you create compelling
-                  cover letters by suggesting content and language based on industry-specific
-                  best practices. I developed the frontend in react and backend apis in the python fast api.
-                  I containerized the application using Docker and deployed it on Digital Ocean. 
-                  `,
+    description: `CV Jury is an AI-powered cover letter writer that suggests content and language
+                  tailored to each industry's best practices. I built the frontend in React and the
+                  backend APIs in Python FastAPI, integrating the OpenAI API for content generation. I
+                  also containerized the application with Docker and deployed it to Digital Ocean.`,
   },
   'time-pay-jao': {
     title: 'Time Pay Jao',
     link: '',
     images: TripeSaverImages,
-    technologies: ['React', 'TailwindCSS'],
-    description: `Time Pay Jao is a ride booking platform. This is the Manager side of the Time Pay Jao application.I created the frontend in reactjs and material ui.`,
+    technologies: ['React', 'Tailwind CSS'],
+    description: `Time Pay Jao is a ride-booking platform. This is the manager-side console for
+                  overseeing drivers, rides and payouts. I built the frontend in React with Tailwind CSS.`,
   },
   'define-pedia': {
     title: 'DefinePedia',
     link: '',
     images: DefinePediaImages,
     technologies: [
-      'Nextjs',
+      'Next.js',
       'React',
-      'Material-UI',
-      'stripe',
+      'Material UI',
+      'Stripe',
       'Express',
-      'Typescript',
+      'TypeScript',
       'MongoDB',
       'Docker',
     ],
-    description: `DefinePedia is a project focusing on Education problems of students and providing them with a clear and best understanding
-                  of their study material.I worked with a team of web developers and worked on both frotend and backend.This is the user side module. It consists of two dashboard modules too.`,
+    description: `DefinePedia helps students grasp their study material with clarity, organizing
+                  content into a focused, easy-to-navigate learning experience. I worked with a team of
+                  web developers across both the frontend and backend on this user-facing module, which
+                  also includes two dashboard modules.`,
   },
   emercient: {
     title: 'Emercient',
     link: '',
     images: TripeSaverImages,
     technologies: [
-      'Reactjs',
-      'Material-UI',
+      'React',
+      'Material UI',
       'Python',
-      'FAST-API',
+      'FastAPI',
       'Azure Active Directory',
       'Azure Blob Storage',
-      'CosmosDB',
+      'Cosmos DB',
       'Docker',
     ],
-    description: `Emercient is a project that enables users to easily search through their data using prompts. Users can create Knowledge Bases
-                    and upload data files in Knowlegde Basis and later search through the data using prompts.`,
+    description: `Emercient lets teams build Knowledge Bases from their own uploaded files and search
+                    across that data conversationally, using natural-language prompts instead of manual
+                    lookups.`,
   },
 }

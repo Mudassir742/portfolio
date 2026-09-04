@@ -11,6 +11,7 @@ import Project from './views/Project/Project'
 import ThemeProvider from './theme'
 
 import './App.css'
+import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 
 import AOS from 'aos';
@@ -26,6 +27,7 @@ function App() {
     <ThemeProvider>
       <ParallaxProvider>
         <BrowserRouter>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/:projectId" element={<Project/>} />

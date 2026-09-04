@@ -1,33 +1,32 @@
-// const PRIMARY = {
-//   lighter: "#BCFFF1",
-//   light: "#00FFC9",
-//   main: "#00BD95",
-//   dark: "#21272F",
-//   darker: "#171C23",
-//   contrastText: "#fff",
-// };
-
-// const BACKGORUND = {
-//   bg1: "#0e1115",
-// };
+// Design system: deep space neutrals + violet/teal accent duo.
+// Kept the primary/background shape the existing components already consume
+// (theme.colors.primary.*, theme.colors.background.*) so the whole app
+// re-themes from this one file. `accent` is new and used by the newer
+// sections (About, Experience, Contact) for a bit of two-tone variety.
 
 const PRIMARY = {
-  lighter:"#ffffff",
-  light:"#7b7c7d",
-  main:"#d4bc91",
-  dark:"#353537",
-  darker:"#1d1d21",
-  contrastText: "#fff",
-}
+  lighter: "#f5f6fb", // headings / high-emphasis text
+  light: "#9497ab", // muted / secondary text
+  main: "#7c6cf6", // primary accent - buttons, links, highlights, borders
+  dark: "#14151f", // card & section surfaces
+  darker: "#0a0a10", // page background, deepest layer
+  contrastText: "#ffffff",
+};
 
 const BACKGORUND = {
-  bg1: "#161619",
-  bg2:"#40403f"
+  bg1: "#0a0a10",
+  bg2: "#1d1e2c",
+};
+
+const ACCENT = {
+  teal: "#34d1bf", // secondary accent for contrast/highlight moments
+  amber: "#f5b942", // reserved for rare warm highlight (stats, badges)
 };
 
 const palatte = {
   primary: { ...PRIMARY },
   background: { ...BACKGORUND },
+  accent: { ...ACCENT },
 };
 
 export default palatte;
