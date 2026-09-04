@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
+import Seo from '../../components/seo/Seo'
 import Banner from '../../components/banner/Banner'
 import About from '../../components/about/About'
 import Experience from '../../components/experience/Experience'
@@ -25,6 +26,7 @@ const Home = () => {
 
   return (
     <>
+      <Seo />
       <Banner />
       <About />
       <Experience />

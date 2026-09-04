@@ -5,16 +5,64 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0a0a10" />
+    <!--
+      Tags marked data-default="true" are the pre-JS fallback: what a
+      crawler that never executes JavaScript (Facebook/Twitter/LinkedIn/
+      Slack unfurlers, and CRA has no server-side render step) will see,
+      always describing the homepage since there's no way to vary this
+      per-route without JS. src/index.js strips these once on boot, before
+      React ever mounts, so real browsers, Googlebot's renderer, and any
+      other JS-executing consumer see exactly one clean set of tags - the
+      per-route ones <Seo> (src/components/seo/Seo.js) renders via Helmet -
+      instead of both sets stacked on top of each other.
+    -->
     <meta
       name="description"
       content="Mudassir Waheed — Senior Full-Stack Developer with 5+ years building scalable SaaS platforms in React, Next.js, Node.js and Python. Portfolio, case studies and résumé."
+      data-default="true"
     />
     <meta name="author" content="Mudassir Waheed" />
+    <link rel="canonical" href="https://mudassir.vercel.app/" data-default="true" />
+    <link rel="sitemap" type="application/xml" href="%PUBLIC_URL%/sitemap.xml" />
 
-    <meta property="og:title" content="Mudassir Waheed — Senior Full-Stack Developer" />
-    <meta property="og:description" content="React, Next.js, Node.js & Python engineer building scalable SaaS platforms. 5+ years experience, team lead." />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website" data-default="true" />
+    <meta property="og:site_name" content="Mudassir Waheed's Portfolio" data-default="true" />
+    <meta property="og:url" content="https://mudassir.vercel.app/" data-default="true" />
+    <meta property="og:title" content="Mudassir Waheed | Senior Full-Stack Developer" data-default="true" />
+    <meta property="og:description" content="Senior Full-Stack Developer with 5+ years building scalable SaaS platforms in React, Next.js, Node.js and Python." data-default="true" />
+    <meta property="og:image" content="https://mudassir.vercel.app/og-image.png" data-default="true" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
+    <meta name="twitter:card" content="summary_large_image" data-default="true" />
+    <meta name="twitter:title" content="Mudassir Waheed | Senior Full-Stack Developer" data-default="true" />
+    <meta name="twitter:description" content="Senior Full-Stack Developer with 5+ years building scalable SaaS platforms in React, Next.js, Node.js and Python." data-default="true" />
+    <meta name="twitter:image" content="https://mudassir.vercel.app/og-image.png" data-default="true" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mudassir Waheed",
+        "url": "https://mudassir.vercel.app/",
+        "image": "https://mudassir.vercel.app/og-image.png",
+        "jobTitle": "Senior Full-Stack Developer",
+        "email": "mailto:mudassirwaheed242@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lahore",
+          "addressCountry": "PK"
+        },
+        "sameAs": [
+          "https://github.com/Mudassir742",
+          "https://www.linkedin.com/in/mudassir-waheed-69b005206/"
+        ],
+        "knowsAbout": [
+          "React", "Next.js", "Node.js", "TypeScript", "Python", "FastAPI",
+          "MongoDB", "Microservices", "RabbitMQ", "Docker", "AWS"
+        ]
+      }
+    </script>
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--

@@ -1,11 +1,11 @@
-import ProjectImage1 from '../asset/project/CoverPhotos/project_1.png'
-import ProjectImage2 from '../asset/project/CoverPhotos/project_2.png'
-import ProjectImage3 from '../asset/project/CoverPhotos/project_3.png'
-import ProjectImage4 from '../asset/project/CoverPhotos/project_4.png'
-import ProjectImage5 from '../asset/project/CoverPhotos/project_5.png'
-import ProjectImage6 from '../asset/project/CoverPhotos/project_6.png'
-import ProjectImage7 from '../asset/project/CoverPhotos/project_7.png'
-import ProjectImage8 from '../asset/project/CoverPhotos/project_8.png'
+import ProjectImage1 from '../asset/project/CoverPhotos/project_1.webp'
+import ProjectImage2 from '../asset/project/CoverPhotos/project_2.webp'
+import ProjectImage3 from '../asset/project/CoverPhotos/project_3.webp'
+import ProjectImage4 from '../asset/project/CoverPhotos/project_4.webp'
+import ProjectImage5 from '../asset/project/CoverPhotos/project_5.webp'
+import ProjectImage6 from '../asset/project/CoverPhotos/project_6.webp'
+import ProjectImage7 from '../asset/project/CoverPhotos/project_7.webp'
+import ProjectImage8 from '../asset/project/CoverPhotos/project_8.webp'
 
 export const ProjectsList = [
   {

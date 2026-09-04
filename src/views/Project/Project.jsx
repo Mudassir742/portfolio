@@ -41,8 +41,10 @@ import {
 } from './Project.styles'
 import { useParams, useNavigate } from 'react-router-dom'
 
+import Seo from '../../components/seo/Seo'
 import { ProjectsDictionary } from '../../data/ProjectsDictionary'
 import { ProjectsList } from '../../data/ProjectsList'
+import { SITE_URL } from '../../data/siteConfig'
 
 const getDisplayUrl = (link) => {
   if (!link) return 'Private build · not publicly deployed'
@@ -93,6 +95,7 @@ const Project = () => {
   if (!projectDetail) {
     return (
       <PageContainer>
+        <Seo title="Project Not Found" path={`/${projectId}`} />
         <NotFoundWrap data-aos="fade-up">
           <NotFoundTitle>Project not found</NotFoundTitle>
           <NotFoundText>
@@ -112,6 +115,13 @@ const Project = () => {
 
   return (
     <PageContainer>
+      <Seo
+        title={title}
+        description={description.replace(/\s+/g, ' ').trim()}
+        path={`/${projectId}`}
+        image={`${SITE_URL}${featured}`}
+        type="article"
+      />
       <ContentWrap>
         <BackLink
           onClick={() => navigate('/', { state: { scrollTo: '#projects' } })}

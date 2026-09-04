@@ -1,8 +1,8 @@
-import Image1 from './1.png'
-import Image2 from './2.png'
-import Image3 from './3.png'
-import Image4 from './4.png'
-import Image5 from './5.png'
-import Image6 from './6.png'
+import Image1 from './1.webp'
+import Image2 from './2.webp'
+import Image3 from './3.webp'
+import Image4 from './4.webp'
+import Image5 from './5.webp'
+import Image6 from './6.webp'
 
 export const DefinePediaImages = [Image1, Image2, Image3, Image4, Image5, Image6]

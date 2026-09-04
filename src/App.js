@@ -2,6 +2,7 @@
 import React,{useEffect} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { ParallaxProvider } from 'react-scroll-parallax'
+import { HelmetProvider } from 'react-helmet-async'
 
 //viwes
 import Home from './views/Home/Home'
@@ -24,18 +25,20 @@ function App() {
   }, []);
 
   return (
-    <ThemeProvider>
-      <ParallaxProvider>
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/:projectId" element={<Project/>} />
-          </Routes>
-          <Footer/>
-        </BrowserRouter>
-      </ParallaxProvider>
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <ParallaxProvider>
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/:projectId" element={<Project/>} />
+            </Routes>
+            <Footer/>
+          </BrowserRouter>
+        </ParallaxProvider>
+      </ThemeProvider>
+    </HelmetProvider>
   )
 }
 

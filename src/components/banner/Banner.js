@@ -32,7 +32,7 @@ import {
   StatLabel,
   AvailabilityChip,
 } from "./Banner.styled";
-import profileImg from "../../asset/Mudassir-01-purple-shirt.png";
+import profileImg from "../../asset/Mudassir-01-purple-shirt.webp";
 
 const RESUME_URL = `${process.env.PUBLIC_URL}/Mudassir_Waheed_Resume.pdf`;
 
